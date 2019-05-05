@@ -1,0 +1,26 @@
+/* pages/subscribe_b/subscribe_b.wxss */
+.flower-type{
+	width: 332rpx;
+	box-sizing: border-box;
+	height: 340rpx;
+	margin: 15rpx 20rpx 15rpx 20rpx;
+}
+.type-img{
+	width: 100%;
+	height:250rpx ;
+	margin-bottom: 5rpx;
+}
+.type-text{
+	font-size: 26rpx;
+	line-height: 30rpx;
+	}
+	.type-money-text{
+		font-size: 24rpx;
+		color: #FF0000;
+	}
+.type-money-car{
+	width: 30rpx;
+	height: 28rpx;
+	float: right;
+	margin-top: 15rpx;
+}

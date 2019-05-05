@@ -1,0 +1,22 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/flower_bag/flower_bag",
+    "pages/flower_bag_buy/flower_bag_buy",
+		"pages/index_store_details/index_store_details",
+		"pages/oder-true/oder-true",
+		"pages/address/address",
+		"pages/address_Add/address_Add",
+    "pages/subscribe_a/subscribe_a",
+    "pages/subscribe_b/subscribe_b",
+    "pages/logs/logs",
+		"pages/user/user"
+		
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle":"black"
+  }
+}

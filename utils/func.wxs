@@ -1,0 +1,135 @@
+
+var timestampToTime = function(timestamp) {
+    
+    timestamp = parseInt(timestamp);
+    
+    var format = getDate(timestamp).getFullYear()+'-'+(getDate(timestamp).getMonth()+1)+'-'+getDate(timestamp).getDate()+'  ';
+
+
+
+    return format;
+
+}
+
+var timeToTimestamp= function(format){
+    
+    var mydata=format.replace('-', '/'); 
+    mydata=mydata.replace('-', '/'); 
+    return getDate(mydata)/1000;
+    
+}
+
+var stringToArray= function(str,babel){
+    if(str){
+        return str.split(babel);
+    };
+}
+
+var arrayByItem = function(field,fieldName,array){
+        
+        for(var i=0;i<array.length;i++){
+            if(array[i][fieldName] == field){
+                return array[i];
+            }
+        };
+}
+
+var countPrice= function(price,discount){
+    
+    var num = price*discount/10;
+    return num.toFixed(2);
+}
+
+var multiply= function(num1,num2){
+    
+    var num = num1*num2;
+    return num.toFixed(2);
+}
+
+var integer= function(num){
+    
+    return  Math.floor(num);
+}
+
+var inArray= function(value,array){
+    return  array.indexOf(parseInt(value));
+}
+var getArrayByTarget = function(array,targetName,target){
+  var getItemsBytarget =function(array,targetName,target){
+
+    for(var i = 0;i < array.length; i++){
+      if(results.length>0){
+        return false;
+      }  
+      var item = array[i];
+      for(var c_i=0;c_i<target.length;c_i++){
+        if(item[targetName] == target[c_i]){  
+          results.push(item);
+        }else if(item.child&&item.child.length>0){            
+          getItemsBytarget(item.child,targetName,target);
+        }
+      }
+    };
+
+  }; 
+  var results = [];
+  getItemsBytarget(array,targetName,target);
+  console.log('222',results)
+  return results;   
+  
+};
+
+var SecondToDate = function(msd) {
+
+    var time = msd
+    if (null != time && "" != time) {
+      if (time > 60 && time < 60 * 60) {
+        time = parseInt(time / 60.0) + "分钟" + parseInt((parseFloat(time / 60.0) -parseInt(time / 60.0)) * 60) + "秒";
+      }else if (time >= 60 * 60 && time < 60 * 60 * 24) {
+         time = parseInt(time / 3600.0) + "小时" + parseInt((parseFloat(time / 3600.0) -parseInt(time / 3600.0)) * 60) + "分钟" + parseInt((parseFloat((parseFloat(time / 3600.0) - parseInt(time / 3600.0)) * 60) -
+        parseInt((parseFloat(time / 3600.0) - parseInt(time / 3600.0)) * 60)) * 60) + "秒";
+
+    } else if (time >= 60 * 60 * 24) {
+
+    time = parseInt(time / 3600.0/24/1000) + "天";
+
+    }
+
+    else {
+
+    time = parseInt(time) + "秒";
+
+    }
+
+}
+
+return time;
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+module.exports = {
+  timestampToTime: timestampToTime,
+  timeToTimestamp: timeToTimestamp,
+  stringToArray: stringToArray,
+  arrayByItem: arrayByItem,
+  countPrice: countPrice,
+  multiply: multiply,
+  integer: integer,
+  getArrayByTarget: getArrayByTarget,
+  inArray:inArray
+  SecondToDate:SecondToDate
+ 
+ 
+};

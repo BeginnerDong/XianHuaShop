@@ -1,0 +1,27 @@
+.bag-box1{
+	width: 100%;
+	border-top: solid 1rpx #E1E1E1;
+}
+.text{
+	width: 30%;
+	border-bottom: solid 2px #FFF;
+	box-sizing: border-box;
+	text-align: center;
+	margin: 0rpx 60rpx;
+	font-size: 28rpx;
+	line-height: 60rpx;
+	
+}
+.text:hover{
+	color:#FF5A6C ;
+	border-bottom: solid 2px #FF5A6C;
+}
+
+.bag-img{
+	width:100%;
+}
+.img-box{
+	height:190rpx ;
+	width:45%;
+	margin: 20rpx 0rpx 0rpx 30rpx;
+}

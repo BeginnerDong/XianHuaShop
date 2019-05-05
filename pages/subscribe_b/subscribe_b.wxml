@@ -1,0 +1,43 @@
+<!--pages/subscribe_b/subscribe_b.wxml-->
+<view  style="width: 100%;">
+				<view class="flower-type border-line ilblock">
+					<view class="type-img border-line radius hiden" style="background: url(../../images/home-img4.png)no-repeat; background-size:100% ;">
+					</view>
+					<view class="type-text">永生花永生花永生花</view>
+					<view class="type-money">
+						<view class="type-money-text ilblock">￥ 56.55</view>
+						<view class="type-money-car ilblock border-line" style="background: url(../../images/home-icon6.png) no-repeat;background-size: 100%;"></view>
+					</view>
+				</view>
+				
+				<view class="flower-type border-line ilblock">
+					<view class="type-img border-line radius hiden" style="background: url(../../images/home-img4.png)no-repeat; background-size:100% ;">
+					</view>
+					<view class="type-text">永生花永生花永生花</view>
+					<view class="type-money">
+						<view class="type-money-text ilblock">￥ 56.55</view>
+						<view class="type-money-car ilblock border-line" style="background: url(../../images/home-icon6.png) no-repeat;background-size: 100%;"></view>
+					</view>
+				</view>
+				
+				<view class="flower-type border-line ilblock">
+					<view class="type-img border-line radius hiden" style="background: url(../../images/details-img1.png)no-repeat; background-size:100% ;">
+					</view>
+					<view class="type-text">永生花永生花永生花</view>
+					<view class="type-money">
+						<view class="type-money-text ilblock">￥ 56.55</view>
+						<view class="type-money-car ilblock border-line" style="background: url(../../images/home-icon6.png) no-repeat;background-size: 100%;"></view>
+					</view>
+				</view>
+				
+				<view class="flower-type border-line ilblock">
+					<view class="type-img border-line radius hiden" style="background: url(../../images/home-img4.png)no-repeat; background-size:100% ;">
+					</view>
+					<view class="type-text">永生花永生花永生花</view>
+					<view class="type-money">
+						<view class="type-money-text ilblock">￥ 56.55</view>
+						<view class="type-money-car ilblock border-line" style="background: url(../../images/home-icon6.png) no-repeat;background-size: 100%;"></view>
+					</view>
+				</view>
+				
+			</view>

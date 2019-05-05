@@ -1,0 +1,16 @@
+page{
+	background: #F2F2F2;
+}
+
+button{
+	width: 60%;
+	height: 60rpx;
+	margin: 160rpx auto 40rpx;
+}
+.list{
+	border-top: solid 1rpx #F2F2F2;
+	padding-left: 30rpx;
+	padding-right: 30rpx;
+	height: 70rpx;
+	line-height: 70rpx;
+}

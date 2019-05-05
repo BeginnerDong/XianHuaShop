@@ -1,0 +1,121 @@
+/**index.wxss**/
+
+.page-section{
+	border-top: solid 1rpx #E1E1E1;
+	width: 100%;
+	height: 700rpx;
+}
+.banner{
+	/* border: solid 1rpx black; */
+	margin-top: 30rpx;
+	height: 360rpx;
+}
+.suona-img{
+	width: 40rpx;
+	height: 40rpx;
+	margin: 20rpx 0rpx;
+}
+.suona-img image{
+	width: 30rpx;
+	height: 30rpx;
+}
+.suona_text{
+	margin-left: 20rpx;
+	font-size: 24rpx;
+	position: relative;
+	top: -30rpx;
+}
+
+/* -----------------------------鲜花包 */
+.bag{
+	width: 100%;
+	height: 80rpx;
+
+}
+.bagtext{
+	font-size: 30rpx;
+	font-weight: bolder;
+	text-indent: 20rpx;
+	line-height: 80rpx;
+}
+.more{
+	font-size: 22rpx;
+	float: right;
+	width: 19%;
+	line-height: 85rpx;
+}
+
+.bag-img-box{
+	/* border:  solid 1rpx red; */
+	height: 160rpx;
+	width: 320rpx;
+	float: left;
+	margin-left: 30rpx;
+	overflow: hidden;
+}
+.bag-img-box image{
+	height: 160rpx;
+	width: 320rpx;
+}
+
+/* --------鲜花预订 */
+.concerted{
+	width: 100%;
+	height: 140rpx;
+}
+.concerted-box{
+	width: 200rpx;
+	height: 140rpx;
+	margin-right: 20rpx;
+}
+.concerted-text{
+	width: 200rpx;
+	height: 140rpx;
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+	line-height: 130rpx;
+	color: #fff;
+	font-size: 24rpx;
+}
+.flower-type{
+	width: 44%;
+	box-sizing: border-box;
+	height: 340rpx;
+	margin: 30rpx 0rpx 20rpx 30rpx;
+}
+.type-img{
+	width: 100%;
+	height:260rpx ;
+	margin-bottom: 5rpx;
+}
+.type-text{
+	font-size: 26rpx;
+	line-height: 30rpx;
+	}
+	.type-money-text{
+		font-size: 24rpx;
+		color: #FF0000;
+	}
+.type-money-car{
+	width: 30rpx;
+	height: 28rpx;
+	float: right;
+	margin-top: 15rpx;
+}
+.mall{
+	width: 100%;
+	margin: 30rpx auto;
+	}
+	.mall-img{
+		width: 100%;
+		height: 400rpx;
+	}
+	.mall-name{
+		font-size: 26rpx;
+	margin-top: 10rpx;
+	}
+	.mall-score{
+		font-size: 24rpx;
+		color: #FF0000;
+	margin-top: 10rpx;
+	}

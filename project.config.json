@@ -1,0 +1,215 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.2",
+	"appid": "wx68b0d5b13c1d9ebb",
+	"projectname": "%E6%AD%AA%E6%9E%9C",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 28,
+			"list": [
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "分类",
+					"pathName": "pages/index1/index1",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/user/user",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发布图文",
+					"pathName": "pages/sendGraphic/sendGraphic",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发布视频",
+					"pathName": "pages/sendVideo/sendVideo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "回答问题",
+					"pathName": "pages/indexAnswer/indexAnswer",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "他的主页",
+					"pathName": "pages/indexPage/indexPage",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "动态详情",
+					"pathName": "pages/indexDetail/indexDetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的关注",
+					"pathName": "pages/userFocus/userFocus",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "关于我们",
+					"pathName": "pages/userAbout/userAbout",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的信息",
+					"pathName": "pages/userInfor/userInfor",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "动态评论",
+					"pathName": "pages/indexStateDetail/indexStateDetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "详情",
+					"pathName": "pages/detail/detail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "消息通知哦",
+					"pathName": "pages/userMessage/userMessage",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "动态发布图文",
+					"pathName": "pages/sendGraphic/sendGraphic",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "动态发布视频",
+					"pathName": "pages/sendVideo/sendVideo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发布吐槽",
+					"pathName": "pages/sendTeasing/sendTeasing",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发布小视频",
+					"pathName": "pages/sendSmallVideo/sendSmallVideo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "问答详情",
+					"pathName": "pages/indexAnswerDetail/indexAnswerDetail",
+					"query": "id=4"
+				},
+				{
+					"id": -1,
+					"name": "完善信息",
+					"pathName": "pages/userInfor/userInfor",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/user/user",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "鲜花包",
+					"pathName": "pages/flower_bag_buy/flower_bag_buy",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "鲜花包2",
+					"pathName": "pages/flower_bag/flower_bag",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "鲜花预订",
+					"pathName": "pages/subscribe_a/subscribe_a",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "商品详情",
+					"pathName": "pages/index_store_details/index_store_details",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "确认订单",
+					"pathName": "pages/oder-true/oder-true",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "地址管理",
+					"pathName": "pages/address/address",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "地址管理",
+					"pathName": "pages/address/address",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "添加地址",
+					"pathName": "pages/address_Add/address_Add"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,28 @@
+<view class="list bg1">
+	<view class="ilblock color1 font24">收货人</view>
+	<input class="ilblock color3 font20" placeholder="请输入真实姓名" style="margin-left: 30rpx;position: relative; top: 17rpx;"/>
+</view>
+<view class="list bg1">
+	<view class="ilblock color1 font24">手机号码</view>
+	<view class="color2 font20 flo-right">+86
+	 <image src="../../images/home-icon5.png" style="width: 12rpx; height: 17rpx; position: relative;top: 4rpx;"></image>
+	 </view>
+</view>
+<view class="list bg1">
+	<view class="ilblock color1 font24">所在地区</view>
+	<view class="color2 font20 flo-right">请选择
+	 <image src="../../images/home-icon5.png" style="width: 12rpx; height: 17rpx; position: relative;top: 4rpx;"></image>
+	 </view>
+</view>
+<view class="list bg1">
+	<view class="ilblock color1 font24">详细地址</view>
+	<input class="ilblock color3 font20" placeholder="如街道、门牌号" style="margin-left: 30rpx;position: relative; top: 17rpx;"/>
+</view>
+<view class="list bg1">
+	<view class="ilblock color1 font24">设为默认地址</view>
+	<view class="color2 font20 flo-right">
+	 <image src="../../images/address-icon3.png" style="width: 80rpx; height: 38rpx; position: relative;top: 12rpx;"></image>
+	 </view>
+</view>
+
+<button class="bg3 radiu40 font24 color5" style="line-height: 60rpx;" type="button">保存</button>

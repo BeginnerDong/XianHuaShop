@@ -1,0 +1,27 @@
+.img{
+	height:200rpx ;
+	width: 300rpx;
+	position: relative;
+	margin: 30rpx 0rpx 0rpx 30rpx;
+	overflow: hidden;
+}
+.img image{
+	height:200rpx ;
+	width: 300rpx;
+}
+.img-text{
+	width: 100%;
+	height: 50rpx;
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+	font-size: 22rpx;
+	color: #fff;
+	line-height: 50rpx;
+	position: absolute;
+	bottom: 0rpx;
+	}
+.box{
+	width: 100%;
+	height: 100%;
+	background: #F4F4F4;
+}

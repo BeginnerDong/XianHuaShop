@@ -1,0 +1,54 @@
+<view class="box">
+	<view class="w700">
+		<view class="img radius ilblock hiden" bindtap="intoPathRedirect" data-path="/pages/index_store_details/index_store_details">
+			<image src="../../images/home-img3.png"></image>
+			<view class="img-text">
+				玫瑰
+			</view>
+		</view>
+		<view class="img radius ilblock hiden" bindtap="intoPathRedirect" data-path="/pages/index_store_details/index_store_details">
+			<image src="../../images/home-img3.png"></image>
+			<view class="img-text">
+				玫瑰
+			</view>
+		</view>
+		<view class="img radius ilblock hiden" bindtap="intoPathRedirect" data-path="/pages/index_store_details/index_store_details">
+			<image src="../../images/home-img3.png"></image>
+			<view class="img-text">
+				玫瑰
+			</view>
+		</view>
+		<view class="img radius ilblock hiden" bindtap="intoPathRedirect" data-path="/pages/index_store_details/index_store_details">
+			<image src="../../images/home-img3.png"></image>
+			<view class="img-text">
+				玫瑰
+			</view>
+		</view>
+		<view class="img radius ilblock hiden" bindtap="intoPathRedirect" data-path="/pages/index_store_details/index_store_details">
+			<image src="../../images/home-img3.png"></image>
+			<view class="img-text">
+				玫瑰
+			</view>
+		</view>
+		<view class="img radius ilblock hiden" bindtap="intoPathRedirect" data-path="/pages/index_store_details/index_store_details">
+			<image src="../../images/home-img3.png"></image>
+			<view class="img-text">
+				玫瑰
+			</view>
+		</view>
+		<view class="img radius ilblock hiden" bindtap="intoPathRedirect" data-path="/pages/index_store_details/index_store_details">
+			<image src="../../images/home-img3.png"></image>
+			<view class="img-text">
+				玫瑰
+			</view>
+		</view>
+		<view class="img radius ilblock hiden" bindtap="intoPathRedirect" data-path="/pages/index_store_details/index_store_details">
+			<image src="../../images/home-img3.png"></image>
+			<view class="img-text">
+				玫瑰
+			</view>
+		</view>
+		
+		
+	</view>
+</view>

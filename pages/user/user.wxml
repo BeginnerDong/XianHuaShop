@@ -1,0 +1,23 @@
+
+
+
+<view class="navbar">
+	<view class="navbar_item" bindtap="intoPathRedirect" data-path="/pages/index/index">
+		<view class="nav_img">
+			<image src="../../images/navbar1.png"></image>
+		</view>
+		<view class="text">首页</view>
+	</view>
+	<view class="navbar_item"   bindtap="intoPathRedirect" data-path="/pages/logs/logs">
+		<view class="nav_img">
+			<image src="../../images/navbar2.png"></image>
+		</view>
+		<view class="text">购物车</view>
+	</view>
+	<view class="navbar_item">
+		<view class="nav_img">
+			<image src="../../images/navbar3-a.png" style="width: 44rpx;"></image>
+		</view>
+		<view class="text this-text">我的</view>
+	</view>
+</view>
