@@ -1,0 +1,25 @@
+page{
+	background: #F2F2F2;
+}
+.buy-box{
+	width: 100%;
+	border-top: solid 1rpx #E1E1E1;
+	margin-bottom: 130rpx;
+}
+
+.byu-img{
+	height: 330rpx;
+	width: 84%;
+	margin:30rpx auto;
+}
+.byu-img image{
+	height: 330rpx;
+	width: 100%;
+}
+.list{
+	border-bottom: solid 1rpx #F2F2F2;
+	padding-left: 30rpx;
+	padding-right: 30rpx;
+	height: 80rpx;
+	line-height: 80rpx;
+}

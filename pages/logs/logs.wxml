@@ -1,4 +1,60 @@
 <!--logs.wxml-->
+<view class="bigbox bg1">
+	<view class="ilblock ran">
+		<image src="../../images/shopping-icon1.png"></image>
+	</view>
+	<view class="ilblock box">
+		<image src="../../images/home-img4.png"></image>
+	</view>
+	<view class="ilblock flo-right" style="height: 74%;width: 54%; margin-top: 5%;margin-right: 5%;">
+		<view class="color1 font26 name overflow2">永生花永生花永生花永生花永生花永生花永生花永生花永生花永生花永生花永生花</view>
+		<view class="bg2 color3 font20" style="width: 100rpx; height: 40rpx;text-align: center; line-height: 40rpx; margin-top: 16rpx;margin-bottom: 16rpx;">
+			大束
+		</view>
+		<view>
+			<view class="ilblock color4 font26">￥59.00</view>
+			<view class="ilblock flo-right font12 color2">
+				<view class="ilblock list-item">-</view>
+				<view class="ilblock list-item" style="border-left: none; border-right: none;">1</view>
+				<view class="ilblock list-item">+</view>
+			</view>
+		</view>
+	</view>
+</view>
+<view class="bigbox bg1">
+	<view class="ilblock ran">
+		<image src="../../images/shopping-icon2.png"></image>
+	</view>
+	<view class="ilblock box">
+		<image src="../../images/details-img1.png"></image>
+	</view>
+	<view class="ilblock flo-right" style="height: 74%;width: 54%; margin-top: 5%;margin-right: 5%;">
+		<view class="color1 font26 name overflow2">永生花永生花永生花永生花永生花永生花永生花永生花永生花永生花永生花永生花</view>
+		<view class="bg2 color3 font20" style="width: 100rpx; height: 40rpx;text-align: center; line-height: 40rpx; margin-top: 16rpx;margin-bottom: 16rpx;">
+			大束
+		</view>
+		<view>
+			<view class="ilblock color4 font26">￥59.00</view>
+			<view class="ilblock flo-right font12 color2">
+				<view class="ilblock list-item">-</view>
+				<view class="ilblock list-item" style="border-left: none; border-right: none;">1</view>
+				<view class="ilblock list-item">+</view>
+			</view>
+		</view>
+	</view>
+</view>
+<view class="footer bg1">
+	<view class="ilblock ran2">
+		<image src="../../images/shopping-icon2.png"></image><text class="font28 color2" style="position: relative; top: -50rpx;">全选</text>
+	</view>
+	<view class="foot-right ilblock" style="position: relative; top: -50rpx;">
+		<view class="ilblock color1 font26">合计：<text class="color4">￥0.00</text></view>
+		<view class="ilblock bg3 color5 font28 radiu40" style="width: 140rpx;height: 70rpx; margin-left: 30rpx; text-align: center; line-height: 70rpx;"
+		bindtap="intoPathRedirect" data-path="/pages/oder-true/oder-true">结算</view>
+	</view>
+</view>
+
+
 
 
 

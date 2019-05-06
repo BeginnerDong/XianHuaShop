@@ -1,0 +1,21 @@
+<view class="buy-box bg1">
+	<view class="w700">
+		<view class="byu-img radius hiden" style="position: relative;">
+			<image src="../../images/home-img2.png"></image>
+		</view>
+	</view>
+	<view class="list bg1" style="margin-top: 10rpx;">
+		<view class="ilblock color2 font26">开始时间</view>
+		<view class="color1 font28 ilblock" style="margin-left: 40rpx;">2019年4月3日</view>
+	</view>
+	<view class="list bg1" style="margin-top: 10rpx;">
+		<view class="ilblock color2 font26">结束时间</view>
+		<view class="color1 font28 ilblock" style="margin-left: 40rpx;">2019年5月3日</view>
+	</view>
+	<view class="list bg1" style="margin-top: 10rpx;">
+		<view class="ilblock color2 font26">剩余送花次数</view>
+		<view class="color1 font28 ilblock" style="margin-left: 40rpx;">3次</view>
+	</view>
+	
+</view>
+

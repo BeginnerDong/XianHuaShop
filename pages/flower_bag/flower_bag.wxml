@@ -1,8 +1,4 @@
 <view class="bag-box1">
-	<view class="bag-text">
-		<view class="text ilblock">鲜花包</view>
-		<view class="text ilblock">定制花管家</view>
-	</view>
 	<view class="bag-img">
 		<view class="img-box radius hiden ilblock" bindtap="intoPath" data-path="/pages/flower_bag_buy/flower_bag_buy" style="background: url(../../images/home-img2.png) no-repeat;background-size: 100%;">
 		</view>

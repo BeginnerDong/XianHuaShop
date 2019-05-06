@@ -34,6 +34,6 @@
 	<view class="oder-btm bg1">
 		<view class="oder-btmbox flo-right" style="line-height: 100rpx;">
 			<view class="ilblock color1 font26">合计：<text class="color4">￥56.00</text></view>
-			<view class="color5 radiu40 ilblock font26" style="width: 200rpx; height: 80rpx; line-height: 80rpx;text-align: center; background: #F20C3E;margin-left: 15rpx;">立即购买</view>
+			<view class="color5 radiu40 ilblock font26" style="width: 190rpx; height: 74rpx; line-height: 80rpx;text-align: center; background: #F20C3E;margin-left: 15rpx;">立即购买</view>
 		</view>
 	</view>

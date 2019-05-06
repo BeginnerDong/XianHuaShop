@@ -1,2 +1,52 @@
+page{
+	background: #F2F2F2;
+}
+.top{
+	width: 100%;
+	height: 480rpx;
+}
+.head{
+	width: 140rpx;
+	height: 140rpx;
+	margin: 0 auto;
+	position: relative;
+	top: -80rpx;
+}
+.list{
+	border-bottom: solid 1rpx #F2F2F2;
+	padding-left: 30rpx;
+	padding-right: 30rpx;
+	height: 80rpx;
+	line-height: 80rpx;
+}
+.cherose{
+	/* border: solid 1rpx red; */
+	width: 100%;
+	height:160rpx ;
+}
+.cherose-item{
+	width: 20%;
+	height: 100%;
+	text-align: center;
+}
+.cherose-itemimg{
+	width: 54rpx;
+	height: 54rpx;
+	overflow: hidden;
+	margin: 20% 33%;
+}
+.cherose-itemimg image{
+	width: 54rpx;
+	height: 54rpx;
+}
+.listimg{
+	height: 100%;
+	width: 60rpx;
+	}
 
-
+.listimg image{
+	height: 35rpx;
+	width: 33rpx;
+	position:relative;
+	top: 10rpx;
+	}

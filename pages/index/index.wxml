@@ -48,7 +48,7 @@
 			</scroll-view>
 		</view>	
 			<view  style="width: 100%;">
-				<view class="flower-type ilblock">
+				<view class="flower-type ilblock" bindtap="intoPathRedirect" data-path="/pages/index_store_details/index_store_details">
 					<view class="type-img border-line radius hiden" style="background: url(../../images/home-img4.png)no-repeat; background-size:100% ;">
 					</view>
 					<view class="type-text">永生花永生花永生花</view>
@@ -58,7 +58,7 @@
 					</view>
 				</view>
 				
-				<view class="flower-type border-line ilblock">
+				<view class="flower-type border-line ilblock" bindtap="intoPathRedirect" data-path="/pages/index_store_details/index_store_details">
 					<view class="type-img border-line radius hiden" style="background: url(../../images/home-img4.png)no-repeat; background-size:100% ;">
 					</view>
 					<view class="type-text">永生花永生花永生花</view>
@@ -68,7 +68,7 @@
 					</view>
 				</view>
 				
-				<view class="flower-type border-line ilblock">
+				<view class="flower-type border-line ilblock" bindtap="intoPathRedirect" data-path="/pages/index_store_details/index_store_details">
 					<view class="type-img border-line radius hiden" style="background: url(../../images/home-img4.png)no-repeat; background-size:100% ;">
 					</view>
 					<view class="type-text">永生花永生花永生花</view>
@@ -78,7 +78,7 @@
 					</view>
 				</view>
 				
-				<view class="flower-type border-line ilblock">
+				<view class="flower-type border-line ilblock" bindtap="intoPathRedirect" data-path="/pages/index_store_details/index_store_details">
 					<view class="type-img border-line radius hiden" style="background: url(../../images/home-img4.png)no-repeat; background-size:100% ;">
 					</view>
 					<view class="type-text">永生花永生花永生花</view>
@@ -92,16 +92,16 @@
 		<view class="w700" style="margin-bottom: 150rpx;">
 			<view class="bag">
 				<view class="bagtext ilblock" style="background: url(../../images/home-icon4.png) no-repeat; background-size: 14%;">积分商城</view>
-				<view class="more ilblock color3" bindtap="intoPath" data-path="/pages/subscribe_a/subscribe_a" style="background: url(../../images/home-icon5.png) no-repeat 110rpx 30rpx;background-size: 9%; ">查看更多</view>
+				<view class="more ilblock color3" bindtap="intoPath" data-path="/pages/integral_store/integral_store" style="background: url(../../images/home-icon5.png) no-repeat 110rpx 30rpx;background-size: 9%; ">查看更多</view>
 			</view>
-			<view class="mall">
+			<view class="mall" bindtap="intoPathRedirect" data-path="/pages/index_store_details/index_store_details">
 				<view class="mall-img hiden radius" style="background:url(../../images/home-img5.png) no-repeat ; background-size: 100%;">
 				</view>
 				<view class="mall-name ">玫瑰玫瑰玫瑰玫瑰</view>
 				<view class="mall-score">积分：52.00</view>
 			</view>
 			
-			<view class="mall">
+			<view class="mall" bindtap="intoPathRedirect" data-path="/pages/index_store_details/index_store_details">
 				<view class="mall-img hiden radius" style="background:url(../../images/home-img4.png) no-repeat ; background-size: 100%;">
 				</view>
 				<view class="mall-name ">玫瑰玫瑰玫瑰玫瑰</view>
@@ -129,7 +129,4 @@
 		        <view class="text">我的</view>
 		    </view>
 		</view>
-			
-		
-		
 </view>

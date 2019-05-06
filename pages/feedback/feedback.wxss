@@ -1,0 +1,28 @@
+.buy-box{
+	width: 100%;
+	border-top: solid 1rpx #E1E1E1;
+}
+.top{
+	width: 24%;
+	height: 300rpx;
+	margin: 0 38%;
+	line-height: 55rpx;
+	text-align: center;
+	margin-top: 140rpx;
+}
+.top image{
+	height: 160rpx;
+	width: 160rpx;
+	margin-top: ;
+}
+.box{
+	height: 90rpx;
+	width: 85%;
+	margin: 60rpx auto;
+	background: #fff;
+	box-shadow: 0rpx 0rpx 10rpx #E3E3E3;
+	border-radius: 10rpx;
+	line-height: 90rpx;
+	padding-left: 30rpx;
+	padding-right: 30rpx;
+}

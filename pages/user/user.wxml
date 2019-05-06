@@ -1,6 +1,90 @@
 
+<view class="top bg1">
+	<image src="../../images/about-img1.png" style="width: 100%;height: 64%;"></image>
+	<view class="head radiu50 hiden">
+		<image src="../../images/about-img2.png" style="width: 100%;height: 100%;"></image>
+	</view>
+	<view style="line-height: 40rpx; position: relative; top:-70rpx ;">
+		<view class="color1 font26" style="text-align: center;">花仙子</view>
+		<view class="color3 font26" style="text-align: center;">积分余额：<text class="color4">56.00</text></view>
+	</view>
+</view>
+<view class="list bg1" style="margin-top: 10rpx;" bindtap="intoPathRedirect" data-path="/pages/allOder/allOder">
+	<view class="ilblock color1 font30">我的订单</view>
+	<view class="color2 font24 flo-right">查看
+	 <image src="../../images/home-icon5.png" style="width: 12rpx; height: 21rpx;margin-left: 10rpx;"></image>
+	 </view>
+</view>
 
+<view class="cherose bg1">
+	<view class="cherose-item flo-left" bindtap="intoPathRedirect" data-path="/pages/witerPay/witerPay">
+		<view class="cherose-itemimg">
+			<image src="../../images/about-icon1.png"></image>
+		</view>
+		<view class="color3 font24">待支付</view>
+	</view>
+	<view class="cherose-item flo-left" bindtap="intoPathRedirect" data-path="/pages/witerSend/witerSend">
+		<view class="cherose-itemimg">
+			<image src="../../images/about-icon2.png"></image>
+		</view>
+		<view class="color3 font24">待发货</view>
+	</view>
+	<view class="cherose-item flo-left" bindtap="intoPathRedirect" data-path="/pages/witerGet/witerGet">
+		<view class="cherose-itemimg">
+			<image src="../../images/about-icon3.png"></image>
+		</view>
+		<view class="color3 font24">待收货</view>
+	</view>
+	<view class="cherose-item flo-left" bindtap="intoPathRedirect" data-path="/pages/secceed/secceed">
+		<view class="cherose-itemimg">
+			<image src="../../images/about-icon4.png" style="width: 45rpx;"></image>
+		</view>
+		<view class="color3 font24">已完成</view>
+	</view>
+	<view class="cherose-item flo-left" bindtap="intoPathRedirect" data-path="/pages/cancel/cancel">
+		<view class="cherose-itemimg">
+			<image src="../../images/about-icon5.png" style="width: 45rpx;"></image>
+		</view>
+		<view class="color3 font24">已取消</view>
+	</view>
+</view>
 
+<view class="list bg1" style="margin-top: 10rpx;" bindtap="intoPathRedirect" data-path="/pages/myflowerbag/myflowerbag">
+	<view class="ilblock listimg">
+		<image src="../../images/about-icon6.png"></image>
+	</view>
+	<view class="ilblock color1 font30">我的鲜花包</view>
+	<view class="color2 font24 flo-right">
+	 <image src="../../images/home-icon5.png" style="width: 12rpx; height: 21rpx;margin-left: 10rpx;"></image>
+	 </view>
+</view>
+<view class="list bg1"  bindtap="intoPathRedirect" data-path="/pages/myscore/myscore">
+	<view class="ilblock listimg">
+		<image src="../../images/about-icon7.png"></image>
+	</view>
+	<view class="ilblock color1 font30">我的积分</view>
+	<view class="color2 font24 flo-right">
+	 <image src="../../images/home-icon5.png" style="width: 12rpx; height: 21rpx;margin-left: 10rpx;"></image>
+	 </view>
+</view>
+<view class="list bg1"  bindtap="intoPathRedirect" data-path="/pages/address/address">
+	<view class="ilblock listimg">
+		<image src="../../images/about-icon8.png"></image>
+	</view>
+	<view class="ilblock color1 font30">地址管理</view>
+	<view class="color2 font24 flo-right">
+	 <image src="../../images/home-icon5.png" style="width: 12rpx; height: 21rpx;margin-left: 10rpx;"></image>
+	 </view>
+</view>
+<view class="list bg1"  bindtap="intoPathRedirect" data-path="/pages/feedback/feedback">
+	<view class="ilblock listimg">
+		<image src="../../images/about-icon9.png"></image>
+	</view>
+	<view class="ilblock color1 font30">意见反馈</view>
+	<view class="color2 font24 flo-right">
+	 <image src="../../images/home-icon5.png" style="width: 12rpx; height: 21rpx;margin-left: 10rpx;"></image>
+	 </view>
+</view>
 <view class="navbar">
 	<view class="navbar_item" bindtap="intoPathRedirect" data-path="/pages/index/index">
 		<view class="nav_img">

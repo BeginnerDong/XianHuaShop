@@ -9,9 +9,19 @@
 		"pages/address_Add/address_Add",
     "pages/subscribe_a/subscribe_a",
     "pages/subscribe_b/subscribe_b",
+    "pages/integral_store/integral_store",
     "pages/logs/logs",
-		"pages/user/user"
-		
+		"pages/user/user",
+		"pages/myscore/myscore",
+		"pages/myflowerbag/myflowerbag",
+		"pages/feedback/feedback",
+		"pages/suggestion/suggestion",
+		"pages/allOder/allOder",
+		"pages/cancel/cancel",
+		"pages/secceed/secceed",
+		"pages/witerGet/witerGet",
+		"pages/witerSend/witerSend",
+		"pages/witerPay/witerPay"
   ],
   "window":{
     "backgroundTextStyle":"light",

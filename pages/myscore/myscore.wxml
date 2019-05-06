@@ -1,0 +1,33 @@
+<view class="buy-box bg1">
+	<view class="list bg1">
+		<view class="ilblock" style="line-height: 40rpx;">
+			<view class="color2 font26">购买郁金香</view>
+			<view class="color3 font24">￥56.00</view>
+		</view>
+		<view class="color4 font28 ilblock flo-right" style="margin-left: 40rpx;">+12.00</view>
+	</view>
+	<view class="list bg1">
+		<view class="ilblock" style="line-height: 40rpx;">
+			<view class="color2 font26">购买郁金香</view>
+			<view class="color3 font24">￥56.00</view>
+		</view>
+		<view class="color4 font28 ilblock flo-right" style="margin-left: 40rpx;">+12.00</view>
+	</view>
+	<view class="list bg1">
+		<view class="ilblock" style="line-height: 40rpx;">
+			<view class="color2 font26">购买郁金香</view>
+			<view class="color3 font24">￥56.00</view>
+		</view>
+		<view class="color4 font28 ilblock flo-right" style="margin-left: 40rpx;">+12.00</view>
+	</view>
+	<view class="list bg1">
+		<view class="ilblock" style="line-height: 40rpx;">
+			<view class="color2 font26">购买郁金香</view>
+			<view class="color3 font24">￥56.00</view>
+		</view>
+		<view class="color4 font28 ilblock flo-right" style="margin-left: 40rpx;">+12.00</view>
+	</view>
+	
+	
+</view>
+

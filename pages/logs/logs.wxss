@@ -1,0 +1,58 @@
+page{
+	background: #F2F2F2;
+}
+.bigbox{
+	width: 92%;
+	margin: 4%;
+	height: 250rpx;
+	box-shadow: 0rpx 0rpx 20rpx #E0E0E0;
+	border-radius: 20rpx;
+}
+.ran{
+	height: 100%;
+	
+}
+.ran image{
+	width: 40rpx;
+	height: 40rpx;
+	margin: 100rpx 16rpx;
+}
+.box{
+	width: 192rpx;
+	height: 190rpx;
+	overflow: hidden;
+	border-radius: 12rpx;
+	margin: 20rpx 0rpx;
+}
+.box img{
+	width: 192rpx;
+	height: 190rpx;
+}
+.name{
+	/* border: solid 1rpx red; */
+	height: 66rpx;
+}
+.list-item{
+	border: solid 1rpx #F5F5F5;
+	width:60rpx; 
+	height: 40rpx;
+	line-height: 40rpx;
+	text-align: center;
+	font-size: 26rpx;
+}
+
+.footer{
+	width: 100%;
+	height: 110rpx;
+	position: fixed;
+	bottom: 110rpx;
+}
+.ran2{
+	height: 100%;
+	width: 52%;
+}
+.ran2 image{
+	width: 40rpx;
+	height: 40rpx;
+	margin: 40rpx 20rpx;
+}

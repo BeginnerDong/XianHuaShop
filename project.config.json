@@ -12,7 +12,7 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.2.2",
+	"libVersion": "2.6.6",
 	"appid": "wx68b0d5b13c1d9ebb",
 	"projectname": "%E6%AD%AA%E6%9E%9C",
 	"isGameTourist": false,
@@ -34,7 +34,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 28,
+			"current": 37,
 			"list": [
 				{
 					"id": -1,
@@ -207,7 +207,61 @@
 				{
 					"id": -1,
 					"name": "添加地址",
-					"pathName": "pages/address_Add/address_Add"
+					"pathName": "pages/address_Add/address_Add",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "积分商城",
+					"pathName": "pages/integral_store/integral_store",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "购物车",
+					"pathName": "pages/logs/logs",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/user/user",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的鲜花包",
+					"pathName": "pages/myflowerbag/myflowerbag",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的积分",
+					"pathName": "pages/myscore/myscore",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "意见反馈",
+					"pathName": "pages/myscore/myscore",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "意见反馈",
+					"pathName": "pages/feedback/feedback",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "意见",
+					"pathName": "pages/suggestion/suggestion",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的订单",
+					"pathName": "pages/allOder/allOder"
 				}
 			]
 		}

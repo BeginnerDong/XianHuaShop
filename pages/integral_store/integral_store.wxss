@@ -1,0 +1,63 @@
+page{
+	background: #F2F2F2;
+}
+.concerted{
+	width: 100%;
+	height: 140rpx;
+}
+.concerted-box{
+	width: 200rpx;
+	height: 140rpx;
+	margin-right: 20rpx;
+}
+.concerted-text{
+	width: 200rpx;
+	height: 140rpx;
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+	line-height: 130rpx;
+	color: #fff;
+	font-size: 24rpx;
+}
+.flower-type{
+	width: 44%;
+	box-sizing: border-box;
+	height: 340rpx;
+	margin: 30rpx 0rpx 20rpx 30rpx;
+}
+.type-img{
+	width: 100%;
+	height:260rpx ;
+	margin-bottom: 5rpx;
+}
+.type-text{
+	font-size: 26rpx;
+	line-height: 30rpx;
+	}
+	.type-money-text{
+		font-size: 24rpx;
+		color: #FF0000;
+	}
+.type-money-car{
+	width: 30rpx;
+	height: 28rpx;
+	float: right;
+	margin-top: 15rpx;
+}
+.mall{
+	width: 100%;
+	margin: 30rpx auto;
+	}
+	.mall-img{
+		width: 100%;
+		height: 400rpx;
+	}
+	.mall-name{
+		font-size: 26rpx;
+	margin-top: 10rpx;
+	}
+	.mall-score{
+		font-size: 24rpx;
+		color: #FF0000;
+	margin-top: 10rpx;
+	}

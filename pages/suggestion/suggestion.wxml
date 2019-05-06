@@ -1,0 +1,13 @@
+<view class="buy-box bg1">
+	<view class="color1 font30" style="margin-bottom: 20rpx;">问题和意见</view>
+	<textarea class="color3 font24" style="border:solid 1rpx #E6E6E6; width: 86%;height: 258rpx; line-height: 40rpx;padding: 20rpx;" 
+	placeholder="请填写10字以上的问题描述以便我们提供更好的帮助"></textarea>
+	<view class="color1 font30" style="margin-bottom: 20rpx; margin-top: 20rpx;">图片(选填，提供问题的截图)</view>
+	<view class="imgbox">
+		
+	</view>
+	<view class="color1 font30" style="margin-bottom: 20rpx; margin-top: 20rpx;">联系电话</view>
+	<input class="color3 font26" placeholder="选填,便于我们与您联系" />
+	<button class="bg3 color5 font28">提交</button>
+</view>
+

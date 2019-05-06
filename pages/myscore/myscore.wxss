@@ -1,0 +1,16 @@
+page{
+	background: #F2F2F2;
+}
+.buy-box{
+	width: 100%;
+	border-top: solid 1rpx #E1E1E1;
+	margin-bottom: 130rpx;
+}
+.list{
+	border-bottom: solid 1rpx #F2F2F2;
+	padding-left: 30rpx;
+	padding-right: 30rpx;
+	height: 86rpx;
+	line-height: 86rpx;
+	margin-top: 10rpx;
+}

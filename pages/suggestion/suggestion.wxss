@@ -1,0 +1,32 @@
+.buy-box{
+	width: 100%;
+	border-top: solid 1rpx #E1E1E1;
+	padding: 30rpx;
+}
+.imgbox{
+	border: solid 1rpx #F0F0F0;
+	width: 160rpx;
+	height: 190rpx;
+	overflow: hidden;
+}
+.imgbox image{
+	width: 160rpx;
+	height: 190rpx;
+}
+input{
+	border: solid 1rpx #F0F0F0;
+	width: 84.5%;
+	height: 80rpx;
+	line-height: 80rpx;
+	padding-left: 30rpx;
+	padding-right: 30rpx;
+}
+button{
+	height: 70rpx;
+	width: 80%;
+	border-radius: 40rpx;
+	margin-top: 120rpx;
+	margin-right: 100rpx;
+}
+
+

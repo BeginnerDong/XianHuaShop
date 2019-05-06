@@ -59,10 +59,10 @@ page{
 	}
 .list-item{
 	background: #F5F5F5;
-	width:50rpx; height: 50rpx;line-height: 50rpx;
+	width:60rpx; height: 50rpx;line-height: 50rpx;
 	text-align: center;
 	font-size: 26rpx;
-	margin-left: 1rpx;
+	margin-left: 2rpx;
 }
 
  button{
