@@ -16,17 +16,13 @@
 		"pages/myflowerbag/myflowerbag",
 		"pages/feedback/feedback",
 		"pages/suggestion/suggestion",
-		"pages/allOder/allOder",
-		"pages/cancel/cancel",
-		"pages/secceed/secceed",
-		"pages/witerGet/witerGet",
-		"pages/witerSend/witerSend",
-		"pages/witerPay/witerPay"
+		"pages/allOder/allOder"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "首页",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"black",
+		"navigationStyle":"default"
   }
 }

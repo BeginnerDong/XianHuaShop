@@ -6,11 +6,22 @@ const token = new Token();
 
 Page({
   data: {
-    
+    currentId:0
   },
   onLoad: function () {
+    const self = this;
     
+    self.setData({
+    	currentId:self.data.currentId
+    })
   },
+	tabs(e){
+		const self = this;
+		self.data.currentId = api.getDataSet(e,'id');
+		self.setData({
+			currentId:self.data.currentId
+		})
+	},
 	intoPathRedirect(e){
 	  const self = this;
 	  api.pathTo(api.getDataSet(e,'path'),'redi');

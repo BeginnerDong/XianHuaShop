@@ -30,14 +30,14 @@ page{
 	text-align: center;
 }
 .cherose-itemimg{
-	width: 54rpx;
-	height: 54rpx;
+	width: 50rpx;
+	height: 50rpx;
 	overflow: hidden;
 	margin: 20% 33%;
 }
 .cherose-itemimg image{
-	width: 54rpx;
-	height: 54rpx;
+	width: 50rpx;
+	height: 50rpx;
 }
 .listimg{
 	height: 100%;

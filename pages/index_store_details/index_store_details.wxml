@@ -32,7 +32,7 @@
 <view style="width: 100%; height: 100rpx;"></view>
 <view class="buy">
 	<view class="ilblock" style="width: 44%;">
-		<view class="ilblock" style="width: 45%; text-align: center; margin-bottom: 8rpx;">
+		<view class="ilblock" style="width: 45%; text-align: center; margin-bottom: 8rpx;" bindtap="intoPathRedirect" data-path="/pages/index/index">
 			<view class="footer-img">
 				<image src="../../images/details-icon2.png"></image>
 			</view>
@@ -49,11 +49,11 @@
 			</view>
 		</view>
 	</view>
-	<button class="ilblock" style="width: 52%;">立即购买</button>	
+	<button class="ilblock" style="width: 52%;" bindtap="show">立即购买</button>	
 </view>
-<view class="big-buybox">
+<view class="big-buybox" wx:if="{{is_show}}">
 	<view class="big-buybtm bg1">
-		<image src="../../images/details-icon1.png" style="width: 36rpx; height: 36rpx;float: right;margin: 30rpx;"></image>
+		<image src="../../images/details-icon1.png" style="width: 36rpx; height: 36rpx;float: right;margin: 30rpx;" bindtap="show"></image>
 		<view class="buybtm-img ilblock radiu15 hiden flo-left">
 			<image src="../../images/details-img1.png"></image>
 		</view>
