@@ -1,38 +1,32 @@
+<wxs src="../../utils/func.wxs" module="func" />
 <view class="top hiden">
-	<image src="../../images/details-img2.png"></image>
+	<image src="{{web_mainData.bannerImg[0].url}}"></image>
 </view>
 <view class="top-text color1 font30">
-	永生花永生花永生花
+	{{web_mainData.title}}
 </view>
 <view class="top-text color4 font30">
-	积分：12.00
+	￥{{web_mainData.price}}
 </view>
 <view class="top-text color2 font24" style="padding-right: 30rpx; margin-bottom: 30rpx;">
-	邮费说明：内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+	邮费说明：{{web_mainData.description}}
 </view>
 <view class="bg2" style="width: 100%;height: 20rpx;"></view>
 <view class="top-text color1 font30">
 	商品详情
 </view>
-<view class="top-text color2 font24" style="padding-right: 30rpx; margin-bottom: 30rpx;">
-	内容内容内容内容内容内容内容内容内容内容内容内容内容内容容内容内容内容内容容内容内容内容内容
+<view>
+	<view class="content ql-editor font26">
+		<import src="../../wxParse/wxParse.wxml" />
+		<template is="wxParse" data="{{wxParseData:web_mainData.content}}" />
+	</view>
 </view>
-<view class="middle-img hiden">
-	<image src="../../images/home-img4.png"></image>
-</view>
-<view class="top-text color2 font24" style="padding-right: 30rpx; margin-bottom: 30rpx;">
-	内容内容内容内容内容内容内容内容内容内容内容内容内容内容容内容内容内容内容容内容内容内容内容
-</view>
-<view class="top-text color2 font24" style="padding-right: 30rpx; margin-bottom: 30rpx;">
-	内容内容内容内容内容内容内容内容内容内容内容内容内容内容容内容内容内容内容容内容内容内容内容
-</view>
-<view class="top-text color2 font24" style="padding-right: 30rpx; margin-bottom: 30rpx;">
-	内容内容内容内容内容内容内容内容内容内容内容内容内容内容容内容内容内容内容容内容内容内容内容
-</view>
+
 <view style="width: 100%; height: 100rpx;"></view>
 <view class="buy">
 	<view class="ilblock" style="width: 44%;">
-		<view class="ilblock" style="width: 45%; text-align: center; margin-bottom: 8rpx;" bindtap="intoPathRedirect" data-path="/pages/index/index">
+		<view class="ilblock" style="width: 45%; text-align: center; margin-bottom: 8rpx;" bindtap="intoPathRedirect"
+		 data-path="/pages/index/index">
 			<view class="footer-img">
 				<image src="../../images/details-icon2.png"></image>
 			</view>
@@ -44,39 +38,43 @@
 			<view class="footer-img">
 				<image src="../../images/home-icon6.png"></image>
 			</view>
-			<view class="font20 color3">
+			<view class="font20 color3" bindtap="selectModel" data-type="addCart">
 				购物车
 			</view>
 		</view>
 	</view>
-	<button class="ilblock" style="width: 52%;" bindtap="show">立即购买</button>	
+	<button class="ilblock" style="width: 52%;"  bindtap="selectModel" data-type="buy">立即购买</button>
 </view>
-<view class="big-buybox" wx:if="{{is_show}}">
+<view class="big-buybox" wx:if="{{web_isShow}}">
 	<view class="big-buybtm bg1">
-		<image src="../../images/details-icon1.png" style="width: 36rpx; height: 36rpx;float: right;margin: 30rpx;" bindtap="show"></image>
+		<image src="../../images/details-icon1.png" style="width: 36rpx; height: 36rpx;float: right;margin: 30rpx;" bindtap="isShow"></image>
 		<view class="buybtm-img ilblock radiu15 hiden flo-left">
-			<image src="../../images/details-img1.png"></image>
+			<image src="{{web_choosed_skuData.mainImg[0].url}}"></image>
 		</view>
 		<view class="ilblock flo-left">
-			<view class="color1 font30"style="margin-top: 60rpx;">永生花永生花永生花</view>
-			<view class="color4 font30"style="margin-top: 30rpx;">积分：12.00</view>
+			<view class="color1 font30" style="margin-top: 60rpx;">{{web_choosed_skuData.title}}</view>
+			<view class="color4 font30" style="margin-top: 30rpx;">￥{{web_choosed_skuData.price}}</view>
 		</view>
-		<view class="color1 font28" style="clear: both;margin-left: 30rpx;">规格</view>
-		<view>
-			<view class="ilblock buybtm-norms norms-star font26 color3">大束</view>
-			<view class="ilblock buybtm-norms font26 color3">中束</view>
-			<view class="ilblock buybtm-norms font26 color3">小束</view>
-		</view>
-		<view class="list">
-			<view class="color1 font26 ilblock">
-				购买数量：
+		<block wx:for="{{web_labelData}}" wx:key="id">
+			<view class="color1 font28" style="clear: both;margin-left: 30rpx;">{{item.title}}</view>
+			<view style="margin-top: 20rpx;">
+				<block wx:for="{{item.child}}" wx:for-item="c_item" wx:key="c_item">
+					<view class="ilblock buybtm-norms  font26 color3 {{func.inArray(c_item.id,web_merge_can_choose_sku_item)==-1?'color:gray':(func.inArray(c_item.id,web_choosed_sku_item)!=-1?'norms-star':'color:black')}}"
+					 bindtap="{{func.inArray(c_item.id,web_merge_can_choose_sku_item)!=-1?'chooseSku':''}}" data-id="{{c_item.id}}" >
+					 {{c_item.title}}</view>			
+				</block>
 			</view>
-			<view class="color1 font12 ilblock flo-right">
-				<view class="ilblock list-item">-</view>
-				<view class="ilblock list-item">1</view>
-				<view class="ilblock list-item">+</view>
+		</block>
+			<view class="list">
+				<view class="color1 font26 ilblock">
+					购买数量：
+				</view>
+				<view class="color1 font12 ilblock flo-right">
+					<view class="ilblock list-item" bindtap="counter" data-type="-">-</view>
+					<view class="ilblock list-item">{{web_count}}</view>
+					<view class="ilblock list-item" bindtap="counter" data-type="+">+</view>
+				</view>
+				<button style="margin-top: 200rpx;" bindtap="{{web_buttonType=='buy'?'goBuy':'addCart'}}">确定</button>
 			</view>
-				<button style="margin-top: 200rpx;"bindtap="intoPathRedirect" data-path="/pages/oder-true/oder-true">确定</button>	
-		</view>
 	</view>
 </view>

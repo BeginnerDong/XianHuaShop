@@ -1,63 +1,29 @@
 <!--logs.wxml-->
+<block wx:for="{{web_mainData}}" wx:key="id">
 <view class="box bg1" style="border-top: solid 1rpx #E1E1E1;">
 	<view class="font24 color1">
-		张三<text class="color2" style="margin-left: 50rpx;">15632464563</text>
+		{{item.name}}<text class="color2" style="margin-left: 50rpx;">{{item.phone}}</text>
 	</view>
-	<view class="font24 color2" style="line-height: 50rpx;">
-		陕西省西安市高新区大都会
-	</view>
-	<view>
-		<view class="ilblock radiu50">
-			<image src="../../images/shopping-icon1.png" style="width: 22rpx;height: 22rpx; position: relative;top: 5rpx;"></image>
-		</view>
-		<label class="color2 font20" style="margin-left: 10rpx;">默认地址</label>
-		
-		<view class="ilblock flo-right" style="margin-right: 60rpx;">
-			<view class="ilblock font20"><image src="../../images/address-icon1.png" style="width: 24rpx;height: 22rpx; margin-right: 20rpx;"></image><text class="color3">编辑</text></view>
-			<view class="ilblock font20" style="margin-left: 20px;"><image src="../../images/address-icon2.png" style="width: 24rpx;height: 22rpx; margin-right: 20rpx;"></image><text class="color3">删除</text></view>
-		</view>
-	</view>
-</view>
-<view class="bg2" style="width: 100%; height:20rpx ;"></view>
-<view class="box bg1">
-	<view class="font24 color1">
-		张三<text class="color2" style="margin-left: 50rpx;">15632464563</text>
-	</view>
-	<view class="font24 color2" style="line-height: 50rpx;">
-		陕西省西安市高新区大都会
+	<view class="font24 color2 avoidOverflow" style="line-height: 50rpx;">
+		{{item.province+item.city+item.country+item.detail}}
 	</view>
 	<view>
 		<view class="ilblock radiu50">
 			<image src="../../images/shopping-icon2.png" style="width: 22rpx;height: 22rpx; position: relative;top: 5rpx;"></image>
 		</view>
-		<label class="color2 font20" style="margin-left: 10rpx;">默认地址</label>
+		<view class="handle_left flex  {{item.isdefault=='1'?'color5':''}}" bindtap="{{item.isdefault=='0'?(web_buttonCanClick?'updateAddress':''):''}}" data-id="{{item.id}}">
+			<image src="{{item.isdefault=='0'?'/images/icon.png':'/images/icon2.png'}}"></image> {{item.isdefault=='0'?'设为默认地址':'默认地址'}}
+		</view>
 		
 		<view class="ilblock flo-right" style="margin-right: 60rpx;">
-			<view class="ilblock font20"><image src="../../images/address-icon1.png" style="width: 24rpx;height: 22rpx; margin-right: 20rpx;"></image><text class="color3">编辑</text></view>
-			<view class="ilblock font20" style="margin-left: 20px;"><image src="../../images/address-icon2.png" style="width: 24rpx;height: 22rpx; margin-right: 20rpx;"></image><text class="color3">删除</text></view>
+			<view class="ilblock font20" data-path="/pages/userNewAddress/userNewAddress?id={{item.id}}" bindtap="intoPath"><image src="../../images/address-icon1.png" style="width: 24rpx;height: 22rpx; margin-right: 20rpx;"></image><text class="color3">编辑</text></view>
+			<view class="ilblock font20" style="margin-left: 20px;" data-id="{{item.id}}" bindtap="{{web_buttonCanClick?'deleteAddress':''}}"><image src="../../images/address-icon2.png" style="width: 24rpx;height: 22rpx; margin-right: 20rpx;"></image><text class="color3">删除</text></view>
 		</view>
 	</view>
 </view>
-	<button class="bg3 radiu40 font24 color5" style="line-height: 60rpx;" type="button"bindtap="intoPathRedirect" data-path="/pages/address_Add/address_Add">添加地址</button>
+</block>
+<button class="bg3 radiu40 font24 color5" style="line-height: 60rpx;" type="button" bindtap="intoPath" data-path="/pages/address_Add/address_Add">添加地址</button>
 
 
-<!-- <view class="navbar">
-	<view class="navbar_item"  bindtap="intoPathRedirect" data-path="/pages/index/index">
-		<view class="nav_img">
-			<image src="../../images/navbar1.png"></image>
-		</view>
-		<view class="text">首页</view>
-	</view>
-	<view class="navbar_item">
-		<view class="nav_img">
-			<image src="../../images/navbar2-a.png"></image>
-		</view>
-		<view class="text this-text">购物车</view>
-	</view>
-	<view class="navbar_item"   bindtap="intoPathRedirect" data-path="/pages/user/user">
-		<view class="nav_img">
-			<image src="../../images/navbar3.png" style="width: 44rpx;"></image>
-		</view>
-		<view class="text">我的</view>
-	</view>
-</view> -->
+
+

@@ -1,12 +1,8 @@
 <view class="bag-box1">
 	<view class="bag-img">
-		<view class="img-box radius hiden ilblock" bindtap="intoPath" data-path="/pages/flower_bag_buy/flower_bag_buy" style="background: url(../../images/home-img2.png) no-repeat;background-size: 100%;">
-		</view>
-		<view class="img-box radius hiden ilblock" bindtap="intoPath" data-path="/pages/flower_bag_buy/flower_bag_buy" style="background: url(../../images/home-img2.png) no-repeat;background-size: 100%;">
-		</view>
-		<view class="img-box radius hiden ilblock" bindtap="intoPath" data-path="/pages/flower_bag_buy/flower_bag_buy" style="background: url(../../images/home-img2.png) no-repeat;background-size: 100%;">
-		</view>
-		<view class="img-box radius hiden ilblock" bindtap="intoPath" data-path="/pages/flower_bag_buy/flower_bag_buy" style="background: url(../../images/home-img2.png) no-repeat;background-size: 100%;">
-		</view>
+		<block wx:for="{{web_mainData}}">
+			<view class="img-box radius hiden ilblock" bindtap="intoPath" data-path="/pages/flower_bag_buy/flower_bag_buy" 
+			style="background: url({{item.mainImg[0].url}}) no-repeat;background-size: 100%;"></view>
+		</block>
 	</view>
 </view>

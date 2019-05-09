@@ -1,13 +1,25 @@
 <view class="buy-box bg1">
 	<view class="color1 font30" style="margin-bottom: 20rpx;">问题和意见</view>
 	<textarea class="color3 font24" style="border:solid 1rpx #E6E6E6; width: 86%;height: 258rpx; line-height: 40rpx;padding: 20rpx;" 
-	placeholder="请填写10字以上的问题描述以便我们提供更好的帮助"></textarea>
+	placeholder="请填写10字以上的问题描述以便我们提供更好的帮助" data-key="content" bindblur="changeBind" value="{{web_submitData.content}}"></textarea>
 	<view class="color1 font30" style="margin-bottom: 20rpx; margin-top: 20rpx;">图片(选填，提供问题的截图)</view>
-	<view class="imgbox">
-		
-	</view>
-	<view class="color1 font30" style="margin-bottom: 20rpx; margin-top: 20rpx;">联系电话</view>
+	
+		<view class="uploder flexRowBetween" id="uploaderFiles">
+			<block  wx:for="{{web_submitData.mainImg}}" wx:key="{{index}}">
+				<view class="upload_box">
+					<view class="uploader_item forgive_number"  style="margin-right: 30rpx;position:relative">
+						<image class="weui-uploader__img" src="{{item.url}}" mode="aspectFill" bindtap="previewImg" data-index="{{index}}"/>   
+						 <image src="/images/deleteImg.png" class="delete" bindtap="delete" style="width:40rpx;height:40rpx;" data-index="{{index}}"></image>
+					</view> 
+				</view>
+			</block>
+			<view  class="uploader_item" bindtap="upLoadImg" wx:if="{{web_submitData.mainImg.length<3}}">
+				<image src="/images/upload.png"></image>
+			</view>
+		</view>
+	
+	<view class="color1 font30" style="margin-bottom: 20rpx; margin-top: 20rpx;" data-key="phone" bindblur="changeBind" value="{{web_submitData.phone}}">联系电话</view>
 	<input class="color3 font26" placeholder="选填,便于我们与您联系" />
-	<button class="bg3 color5 font28">提交</button>
+	<button class="bg3 color5 font28" open-type="getUserInfo" bindgetuserinfo="{{web_buttonCanClick?'submit':''}}">提交</button>
 </view>
 

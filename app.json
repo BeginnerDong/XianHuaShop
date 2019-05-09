@@ -1,28 +1,29 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/flower_bag/flower_bag",
     "pages/flower_bag_buy/flower_bag_buy",
-		"pages/index_store_details/index_store_details",
-		"pages/oder-true/oder-true",
-		"pages/address/address",
-		"pages/address_Add/address_Add",
+    "pages/index_store_details/index_store_details",
+    "pages/oder-true/oder-true",
+    "pages/address/address",
+    "pages/address_Add/address_Add",
     "pages/subscribe_a/subscribe_a",
     "pages/subscribe_b/subscribe_b",
     "pages/integral_store/integral_store",
     "pages/logs/logs",
-		"pages/user/user",
-		"pages/myscore/myscore",
-		"pages/myflowerbag/myflowerbag",
-		"pages/feedback/feedback",
-		"pages/suggestion/suggestion",
-		"pages/allOder/allOder"
+    "pages/user/user",
+    "pages/myscore/myscore",
+    "pages/myflowerbag/myflowerbag",
+    "pages/feedback/feedback",
+    "pages/suggestion/suggestion",
+    "pages/allOder/allOder"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "首页",
-    "navigationBarTextStyle":"black",
-		"navigationStyle":"default"
-  }
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default"
+  },
+  "sitemapLocation": "sitemap.json"
 }

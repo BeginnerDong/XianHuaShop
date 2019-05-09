@@ -1,25 +1,25 @@
 <!--logs.wxml-->
 <view class="topnav">
-	<view class="top-item  {{currentId == 0?'itemstar':''}}" data-id="0" bindtap="tabs">
+	<view class="top-item  {{num == 0?'itemstar':''}}" data-id="0" bindtap="{{web_buttonCanClick?'menuClick':''}}">
 		全部
 	</view>
-	<view class="top-item {{currentId == 1?'itemstar':''}}" data-id="1" bindtap="tabs">
+	<view class="top-item {{num == 1?'itemstar':''}}" data-id="1" bindtap="{{web_buttonCanClick?'menuClick':''}}">
 		待支付
 	</view>
-	<view class="top-item {{currentId == 2?'itemstar':''}}" data-id="2" bindtap="tabs">
+	<view class="top-item {{num == 2?'itemstar':''}}" data-id="2" bindtap="{{web_buttonCanClick?'menuClick':''}}">
 		待发货
 	</view>
-	<view class="top-item {{currentId == 3?'itemstar':''}}" data-id="3" bindtap="tabs">
+	<view class="top-item {{num == 3?'itemstar':''}}" data-id="3" bindtap="{{web_buttonCanClick?'menuClick':''}}">
 		待收货
 	</view>
-	<view class="top-item {{currentId == 4?'itemstar':''}}" data-id="4" bindtap="tabs">
+	<view class="top-item {{num == 4?'itemstar':''}}" data-id="4" bindtap="{{web_buttonCanClick?'menuClick':''}}">
 		已完成
 	</view>
-	<view class="top-item {{currentId == 5?'itemstar':''}}" data-id="5" bindtap="tabs">
+	<view class="top-item {{num == 5?'itemstar':''}}" data-id="5" bindtap="{{web_buttonCanClick?'menuClick':''}}">
 		已取消
 	</view>
 </view>
-<view style="{{currentId == 0?'display:block':'display:none'}}">
+<view style="{{num == 0?'display:block':'display:none'}}">
 	
 	<view class="bigbox bg1">
 		<view class="font24" style="height: 100rpx; line-height: 100rpx;">

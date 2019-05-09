@@ -2,9 +2,9 @@
 	<view class="top">
 		<image src="../../images/service-icon.png"></image>
 		<view class="color1 font30">客服电话</view>
-		<view class="font26 color2">145612154665</view>
+		<view class="font26 color2">{{web_mainData.description}}</view>
 	</view>
-	<view class="box" bindtap="intoPathRedirect" data-path="/pages/suggestion/suggestion">
+	<view class="box" bindtap="intoPath" data-path="/pages/suggestion/suggestion">
 		<view class="ilblock color1 font30">意见反馈</view>
 		<view class="ilblock flo-right">
 			<image src="../../images/home-icon5.png" style="width: 14rpx; height: 24rpx;"></image>

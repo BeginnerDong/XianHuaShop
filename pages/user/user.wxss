@@ -19,6 +19,13 @@ page{
 	height: 80rpx;
 	line-height: 80rpx;
 }
+.user_img{
+	width:140rpx;
+	height:140rpx;
+	border-radius:50%;
+	overflow:hidden;
+	margin:0px auto;
+}
 .cherose{
 	/* border: solid 1rpx red; */
 	width: 100%;

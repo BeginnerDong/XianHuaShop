@@ -1,16 +1,38 @@
-page{
-	background: #F2F2F2;
+/**index.wxss**/
+.input_note{
+	width:22%;
+	color:#40260a;
+	height:100%;
 }
-
-button{
-	width: 60%;
-	height: 60rpx;
-	margin: 160rpx auto 40rpx;
+.user_input{
+	height:90rpx;
+	line-height:90rpx;
+	border-bottom:solid 1px #e0e0e0;}
+.user_input input{
+	width:78%;
+	color:#40260a;	
+	font-size:28rpx;
 }
-.list{
-	border-top: solid 1rpx #F2F2F2;
-	padding-left: 30rpx;
-	padding-right: 30rpx;
-	height: 70rpx;
-	line-height: 70rpx;
+.user_input picker{
+	width:78%;
+	height:100%;
+}
+.user_input image{
+	width:11rpx;
+	height:20rpx;
+}
+.region{
+	width:80%;
+	height:90rpx;
+}
+.choose_region{
+	width:20%;
+	height:90rpx;
+	text-align:right;
+}
+.address_right text{color:#b2b2b2;font-size:28rpx;}
+.address_right image{margin-left:15rpx;}
+.address_set{width:200rpx;}
+.submit_info{
+	margin:80rpx auto 0 auto;
 }
