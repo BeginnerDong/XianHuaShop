@@ -21,96 +21,58 @@
 </view>
 <view style="{{num == 0?'display:block':'display:none'}}">
 	
+<view class="bigbox bg1">
+		<view class="font24" style="height: 100rpx; line-height: 100rpx;">
+			<view class="color3 ilblock" style="margin-left: 30rpx;">交易时间：2018-08-30</view>
+			<view class="color4 ilblock flo-right" style="margin-right: 30rpx;">等待支付</view>
+		</view>
+		<view>
+				<view class="ilblock box">
+					<image src="../../images/home-img4.png"></image>
+				</view>
+				<view class="ilblock flo-right" style="height: 50%;width: 54%;margin-right:5%;">
+					<view class="color1 font26 name overflow2">永生花永生花永生花永生花永生花永生花永生花</view>
+					<view class="bg2 color3 font20" style="width: 100rpx; height: 40rpx;text-align: center; line-height: 40rpx; margin-top: 16rpx;margin-bottom: 16rpx;">
+						大束
+					</view>
+					<view class="color4 font26" style="margin-top: 25rpx;">￥59.00</view>
+				</view>
+		</view>
+		
+		<view class="font24 color3" style="box-sizing: border-box; padding-right: 5%;padding-left: 5%; ">
+			<view class="box-btm ilblock flo-right">取消订单</view>
+			<view class="box-btm ilblock flo-right" style="margin-right: 40rpx;">去支付</view>
+			<view style="clear: both;"></view>
+		</view>
+	</view>
+	
+	
 	<view class="bigbox bg1">
 		<view class="font24" style="height: 100rpx; line-height: 100rpx;">
 			<view class="color3 ilblock" style="margin-left: 30rpx;">交易时间：2018-08-30</view>
 			<view class="color4 ilblock flo-right" style="margin-right: 30rpx;">等待支付</view>
 		</view>
-		<view class="ilblock box">
-			<image src="../../images/home-img4.png"></image>
+		<view>
+				<view class="ilblock box">
+					<image src="../../images/home-img4.png"></image>
+				</view>
+				<view class="ilblock flo-right" style="height: 50%;width: 54%;margin-right:5%;">
+					<view class="color1 font26 name overflow2">永生花永生花永生花永生花永生花永生花永生花</view>
+					<view class="bg2 color3 font20" style="width: 100rpx; height: 40rpx;text-align: center; line-height: 40rpx; margin-top: 16rpx;margin-bottom: 16rpx;">
+						大束
+					</view>
+					<view class="color4 font26" style="margin-top: 25rpx;">￥59.00</view>
+				</view>
 		</view>
-		<view class="ilblock flo-right" style="height: 74%;width: 54%;margin-right: 5%;">
-			<view class="color1 font26 name overflow2">永生花永生花永生花永生花永生花永生花永生花</view>
-			<view class="bg2 color3 font20" style="width: 100rpx; height: 40rpx;text-align: center; line-height: 40rpx; margin-top: 16rpx;margin-bottom: 16rpx;">
-				大束
-			</view>
-			<view class="color4 font26" style="margin-top: 32rpx;">￥59.00</view>
-			<view class="font24 color3" style="margin-top: 24rpx;">
-				<view class="box-btm ilblock flo-right">取消订单</view>
-				<view class="box-btm ilblock flo-right" style="margin-right: 40rpx;">去支付</view>
-			</view>
-		</view>
-	</view>
-	
-	<view class="bigbox bg1" style="height: 320rpx;">
-		<view class="font24" style="height: 100rpx; line-height: 100rpx;">
-			<view class="color3 ilblock" style="margin-left: 30rpx;">交易时间：2018-08-30</view>
-			<view class="color4 ilblock flo-right" style="margin-right: 30rpx;">已经完成</view>
-		</view>
-		<view class="ilblock box">
-			<image src="../../images/home-img4.png"></image>
-		</view>
-		<view class="ilblock flo-right" style="height: 74%;width: 54%;margin-right: 5%;">
-			<view class="color1 font26 name overflow2">永生花永生花永生花永生花永生花永生花永生花</view>
-			<view class="bg2 color3 font20" style="width: 100rpx; height: 40rpx;text-align: center; line-height: 40rpx; margin-top: 16rpx;margin-bottom: 16rpx;">
-				大束
-			</view>
-			<view class="color4 font26" style="margin-top: 32rpx;">￥59.00</view>
-		</view>
-	</view>
-	
-	<view class="bigbox bg1" style="height: 320rpx;">
-		<view class="font24" style="height: 100rpx; line-height: 100rpx;">
-			<view class="color3 ilblock" style="margin-left: 30rpx;">交易时间：2018-08-30</view>
-			<view class="color4 ilblock flo-right" style="margin-right: 30rpx;">已经取消</view>
-		</view>
-		<view class="ilblock box">
-			<image src="../../images/home-img4.png"></image>
-		</view>
-		<view class="ilblock flo-right" style="height: 74%;width: 54%;margin-right: 5%;">
-			<view class="color1 font26 name overflow2">永生花永生花永生花永生花永生花永生花永生花</view>
-			<view class="bg2 color3 font20" style="width: 100rpx; height: 40rpx;text-align: center; line-height: 40rpx; margin-top: 16rpx;margin-bottom: 16rpx;">
-				大束
-			</view>
-			<view class="color4 font26" style="margin-top: 32rpx;">￥59.00</view>
-		</view>
-	</view>
-	
-	<view class="bigbox bg1" style="height: 320rpx;">
-		<view class="font24" style="height: 100rpx; line-height: 100rpx;">
-			<view class="color3 ilblock" style="margin-left: 30rpx;">交易时间：2018-08-30</view>
-			<view class="color4 ilblock flo-right" style="margin-right: 30rpx;">等待发货</view>
-		</view>
-		<view class="ilblock box">
-			<image src="../../images/home-img4.png"></image>
-		</view>
-		<view class="ilblock flo-right" style="height: 74%;width: 54%;margin-right: 5%;">
-			<view class="color1 font26 name overflow2">永生花永生花永生花永生花永生花永生花永生花</view>
-			<view class="bg2 color3 font20" style="width: 100rpx; height: 40rpx;text-align: center; line-height: 40rpx; margin-top: 16rpx;margin-bottom: 16rpx;">
-				大束
-			</view>
-			<view class="color4 font26" style="margin-top: 32rpx;">￥59.00</view>
+		
+		<view class="font24 color3" style="box-sizing: border-box; padding-right: 5%;padding-left: 5%; ">
+			<view class="box-btm ilblock flo-right">取消订单</view>
+			<view class="box-btm ilblock flo-right" style="margin-right: 40rpx;">去支付</view>
+			<view style="clear: both;"></view>
 		</view>
 	</view>
 	
 	
-	<view class="bigbox bg1">
-		<view class="font24" style="height: 100rpx; line-height: 100rpx;">
-			<view class="color3 ilblock" style="margin-left: 30rpx;">交易时间：2018-08-30</view>
-			<view class="color4 ilblock flo-right" style="margin-right: 30rpx;">等待收货</view>
-		</view>
-		<view class="ilblock box">
-			<image src="../../images/home-img4.png"></image>
-		</view>
-		<view class="ilblock flo-right" style="height: 74%;width: 54%;margin-right: 5%;">
-			<view class="color1 font26 name overflow2">永生花永生花永生花永生花永生花永生花永生花</view>
-			<view class="bg2 color3 font20" style="width: 100rpx; height: 40rpx;text-align: center; line-height: 40rpx; margin-top: 16rpx;margin-bottom: 16rpx;">
-				大束
-			</view>
-			<view class="color4 font26" style="margin-top: 32rpx;">￥59.00</view>
-			<view class="font24 color3 box-btm ilblock flo-right" style="margin-top: 24rpx;">确认收货</view>
-		</view>
-	</view>
 	
 </view>
 
