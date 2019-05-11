@@ -1,16 +1,12 @@
 <view class="w700" style="margin-bottom: 150rpx;">
-	
-	<view class="mall" bindtap="intoPathRedirect" data-path="/pages/index_store_details/index_store_details">
-		<view class="mall-img hiden radius" style="background:url(../../images/home-img5.png) no-repeat ; background-size: 100%;">
+	<block wx:for="{{web_mainData}}" wx:key="id">
+		<view class="mall" bindtap="intoPathRedirect" data-path="/pages/index_score_details/index_score_details?id={{item.id}}">
+		
+			<view class="mall-img hiden radius">
+				<image src="{{item.mainImg[0].url}}" style="width:100%;height:100%"></image>
+			</view>
+			<view class="mall-name ">{{item.title}}</view>
+			<view class="mall-score">积分:{{item.score}}</view>
 		</view>
-		<view class="mall-name ">玫瑰玫瑰玫瑰玫瑰</view>
-		<view class="mall-score">积分：52.00</view>
-	</view>
-	
-	<view class="mall" bindtap="intoPathRedirect" data-path="/pages/index_store_details/index_store_details">
-		<view class="mall-img hiden radius" style="background:url(../../images/home-img4.png) no-repeat ; background-size: 100%;">
-		</view>
-		<view class="mall-name ">玫瑰玫瑰玫瑰玫瑰</view>
-		<view class="mall-score">积分：52.00</view>
-	</view>
+	</block>
 </view>

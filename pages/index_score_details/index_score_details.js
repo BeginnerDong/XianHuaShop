@@ -350,7 +350,7 @@ Page({
 			type: 1,
 		}];
 		wx.setStorageSync('payPro',orderList);
-		api.pathTo('/pages/oder-true/oder-true','nav')
+		api.pathTo('/pages/oder-score/oder-score','nav')
 	},
 
 
@@ -360,11 +360,6 @@ Page({
 	intoPath(e) {
 		const self = this;
 		api.pathTo(api.getDataSet(e, 'path'), 'nav');
-	},
-	
-	intoPathRedirect(e) {
-		const self = this;
-		api.pathTo(api.getDataSet(e, 'path'), 'redi');
 	},
 
 	isShow() {

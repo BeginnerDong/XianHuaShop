@@ -19,31 +19,31 @@
 </view>
 
 <view class="cherose bg1">
-	<view class="cherose-item flo-left" bindtap="intoPath" data-path="/pages/allOder/allOder">
+	<view class="cherose-item flo-left" bindtap="intoPath" data-path="/pages/allOder/allOder?num=1">
 		<view class="cherose-itemimg">
 			<image src="../../images/about-icon1.png"></image>
 		</view>
 		<view class="color3 font24">待支付</view>
 	</view>
-	<view class="cherose-item flo-left" bindtap="intoPath" data-path="/pages/allOder/allOder">
+	<view class="cherose-item flo-left" bindtap="intoPath" data-path="/pages/allOder/allOder?num=2">
 		<view class="cherose-itemimg">
 			<image src="../../images/about-icon2.png"></image>
 		</view>
 		<view class="color3 font24">待发货</view>
 	</view>
-	<view class="cherose-item flo-left" bindtap="intoPath" data-path="/pages/allOder/allOder">
+	<view class="cherose-item flo-left" bindtap="intoPath" data-path="/pages/allOder/allOder?num=3">
 		<view class="cherose-itemimg">
 			<image src="../../images/about-icon3.png"></image>
 		</view>
 		<view class="color3 font24">待收货</view>
 	</view>
-	<view class="cherose-item flo-left" bindtap="intoPath" data-path="/pages/allOder/allOder">
+	<view class="cherose-item flo-left" bindtap="intoPath" data-path="/pages/allOder/allOder?num=4">
 		<view class="cherose-itemimg">
 			<image src="../../images/about-icon4.png" style="width: 45rpx;"></image>
 		</view>
 		<view class="color3 font24">已完成</view>
 	</view>
-	<view class="cherose-item flo-left" bindtap="intoPath" data-path="/pages/allOder/allOder">
+	<view class="cherose-item flo-left" bindtap="intoPath" data-path="/pages/allOder/allOder?num=5">
 		<view class="cherose-itemimg">
 			<image src="../../images/about-icon5.png" style="width: 45rpx;"></image>
 		</view>

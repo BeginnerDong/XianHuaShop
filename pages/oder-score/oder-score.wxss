@@ -1,0 +1,88 @@
+page{
+	background: #F4F4F4;
+}
+
+.middle-img{
+	width: 84%;
+	height: 340rpx;
+	margin: 0rpx auto;
+	/* border: solid 1px red; */
+}
+.middle-img image{
+	width: 100%;
+	height: 100%;
+}
+
+.footer-img image{
+	width: 26rpx;
+	height:20rpx;
+}
+
+.big-buybox{
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	z-index: 100;
+	top: 0rpx;
+	padding-top: 260rpx;
+	
+}
+.big-buybtm{
+	width: 100%;
+	height: 490rpx;
+	border-radius: 17rpx 17rpx 0rpx 0rpx;
+}
+.buybtm-img{
+	width:246rpx;
+	height: 246rpx;
+	margin: 30rpx;
+}
+.buybtm-img image{
+	width:246rpx;
+	height: 246rpx;
+}
+.buybtm-norms{
+	width: 90rpx;
+	height: 40rpx;
+	line-height: 40rpx;
+	text-align: center;
+	background: #F8F8F8;
+	margin-top: 30rpx;
+}
+.list{
+	margin-top: 30rpx;
+		height: 80rpx;
+		line-height: 80rpx;
+		padding-left: 30rpx;
+		border-top: solid 1px #ECECEC;
+		padding-right: 30rpx;
+	}
+.list-item{
+	background: #F5F5F5;
+	width:60rpx; height: 50rpx;line-height: 50rpx;
+	text-align: center;
+	font-size: 26rpx;
+	margin-left: 2rpx;
+}
+
+ button{
+	height: 64rpx;
+	width:80% ;
+	line-height: 70rpx;
+	border-radius:40rpx ;
+	background: #FF364E;
+	color: #fff;
+	font-size: 24rpx;
+	margin-top: 15rpx;
+}
+
+.oder-btm{
+	width: 100%;
+	height: 100rpx;
+	position: fixed;
+	bottom: 0rpx;
+}
+.oder-btmbox{
+	width: 55%;
+	height: 100%;
+}

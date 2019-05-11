@@ -1,27 +1,26 @@
 <!--logs.wxml-->
 <block wx:for="{{web_mainData}}" wx:key="id">
-<view class="box bg1" style="border-top: solid 1rpx #E1E1E1;">
+<view class="box bg1" style="border-top: solid 1rpx #E1E1E1;" bindtap="choose" data-id="{{item.id}}">
 	<view class="font24 color1">
 		{{item.name}}<text class="color2" style="margin-left: 50rpx;">{{item.phone}}</text>
 	</view>
 	<view class="font24 color2 avoidOverflow" style="line-height: 50rpx;">
 		{{item.province+item.city+item.country+item.detail}}
 	</view>
-	<view>
-		<view class="ilblock radiu50">
-			<image src="../../images/shopping-icon2.png" style="width: 22rpx;height: 22rpx; position: relative;top: 5rpx;"></image>
-		</view>
-		<view class="handle_left flex  {{item.isdefault=='1'?'color5':''}}" bindtap="{{item.isdefault=='0'?(web_buttonCanClick?'updateAddress':''):''}}" data-id="{{item.id}}">
-			<image src="{{item.isdefault=='0'?'/images/icon.png':'/images/icon2.png'}}"></image> {{item.isdefault=='0'?'设为默认地址':'默认地址'}}
+	
+	<view class="flex" style="margin-top:20rpx;">
+		<view class="handle_left flex font20  {{item.isdefault=='1'?'color1':''}}" bindtap="{{item.isdefault=='0'?(web_buttonCanClick?'updateAddress':''):''}}" data-id="{{item.id}}">
+			<image id="select_icon" src="{{item.isdefault=='0'?'/images/shopping-icon2.png':'/images/shopping-icon1.png'}}"></image> {{item.isdefault=='0'?'设为默认地址':'默认地址'}}
 		</view>
 		
-		<view class="ilblock flo-right" style="margin-right: 60rpx;">
+		<view class="ilblock flo-right flexRowBetween" style="margin-right: 60rpx;">
 			<view class="ilblock font20" data-path="/pages/userNewAddress/userNewAddress?id={{item.id}}" bindtap="intoPath"><image src="../../images/address-icon1.png" style="width: 24rpx;height: 22rpx; margin-right: 20rpx;"></image><text class="color3">编辑</text></view>
 			<view class="ilblock font20" style="margin-left: 20px;" data-id="{{item.id}}" bindtap="{{web_buttonCanClick?'deleteAddress':''}}"><image src="../../images/address-icon2.png" style="width: 24rpx;height: 22rpx; margin-right: 20rpx;"></image><text class="color3">删除</text></view>
 		</view>
 	</view>
 </view>
 </block>
+
 <button class="bg3 radiu40 font24 color5" style="line-height: 60rpx;" type="button" bindtap="intoPath" data-path="/pages/address_Add/address_Add">添加地址</button>
 
 

@@ -178,6 +178,19 @@
 	-webkit-line-clamp: 4; 
 }
 
+.flex{
+	display:flex;
+	align-items:center;
+}
+.flexCenter{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.w710{
+	width:94.8%;
+	padding:0 2.6%;
+}
 
 /***********navbar***********/
 

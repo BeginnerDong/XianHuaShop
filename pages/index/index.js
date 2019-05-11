@@ -11,6 +11,10 @@ const token = new Token();
 
 Page({
 	data: {
+		size:14,//宽度即文字大小
+		marqueeW:0,
+		moveTimes:8,//一屏内容滚动时间为8s
+		allT:"0s",
 		indicatorDots: false,
 		vertical: false,
 		autoplay: true,
@@ -22,8 +26,10 @@ Page({
 		sliderData: [],
 		cardOneData: [],
 		cardTwoData: [],
+		flowerData:[],
+		scoreData:[],
 		labelData:[],
-		isFirstLoadAllStandard: ['getSliderData', 'getCardOneData', 'getCardTwoData'],
+		isFirstLoadAllStandard: ['getSliderData', 'getCardOneData', 'getCardTwoData','getFlowerData','getScoreData'],
 	},
 	//事件处理函数
 
@@ -33,7 +39,59 @@ Page({
 		self.getSliderData();
 		self.getCardOneData();
 		self.getCardTwoData();
-		self.getLabelData()
+		self.getLabelData();
+		self.getFlowerData();
+		self.getScoreData();
+	},
+	
+	getFlowerData() {
+		const self = this;
+		const postData = {};
+		postData.searchItem = {
+			thirdapp_id:2,
+			score:0
+		};
+		postData.order = {
+			listorder: 'desc'
+		};
+		const callback = (res) => {
+			if (res.info.data.length > 0) {
+				self.data.flowerData.push.apply(self.data.flowerData,res.info.data)
+			};
+			if(self.data.flowerData.length>4){
+			  self.data.flowerData = self.data.flowerData.slice(0,4) 
+			};
+			api.checkLoadAll(self.data.isFirstLoadAllStandard, 'getFlowerData', self);
+			self.setData({
+				web_flowerData: self.data.flowerData,
+			});
+		};
+		api.skuGet(postData, callback);
+	},
+	
+	getScoreData() {
+		const self = this;
+		const postData = {};
+		postData.searchItem = {
+			thirdapp_id:2,
+			score:['>',0]
+		};
+		postData.order = {
+			listorder: 'desc'
+		};
+		const callback = (res) => {
+			if (res.info.data.length > 0) {
+				self.data.scoreData.push.apply(self.data.scoreData,res.info.data)
+			}
+			if(self.data.scoreData.length>2){
+			  self.data.scoreData = self.data.scoreData.slice(0,2) 
+			}
+			api.checkLoadAll(self.data.isFirstLoadAllStandard, 'getScoreData', self);
+			self.setData({
+				web_scoreData: self.data.scoreData,
+			});
+		};
+		api.skuGet(postData, callback);
 	},
 
 	getSliderData() {
@@ -46,10 +104,17 @@ Page({
 		const callback = (res) => {
 			console.log(1000, res);
 			if (res.info.data.length > 0) {
-				self.data.sliderData = res.info.data[0]
-
+				self.data.sliderData = res.info.data[0];
+				self.data.text = self.data.sliderData.description
+				
 			}
+			var screenW=wx.getSystemInfoSync().windowWidth;//获取屏幕宽度
+			var contentW=self.data.text.length*self.data.size;//获取文本宽度（大概宽度）
+			var allT=(contentW/screenW)*self.data.moveTimes;//文字很长时计算有几屏
+			allT=allT<8?8:allT;//不够一平-----最小滚动一平时间
+			
 			self.setData({
+				marqueeW:-contentW+"px",allT:allT+"s",
 				web_sliderData: self.data.sliderData,
 			});
 			api.checkLoadAll(self.data.isFirstLoadAllStandard, 'getSliderData', self);

@@ -1,33 +1,12 @@
 <view class="buy-box bg1">
-	<view class="list bg1">
-		<view class="ilblock" style="line-height: 40rpx;">
-			<view class="color2 font26">购买郁金香</view>
-			<view class="color3 font24">￥56.00</view>
-		</view>
-		<view class="color4 font28 ilblock flo-right" style="margin-left: 40rpx;">+12.00</view>
-	</view>
-	<view class="list bg1">
-		<view class="ilblock" style="line-height: 40rpx;">
-			<view class="color2 font26">购买郁金香</view>
-			<view class="color3 font24">￥56.00</view>
-		</view>
-		<view class="color4 font28 ilblock flo-right" style="margin-left: 40rpx;">+12.00</view>
-	</view>
-	<view class="list bg1">
-		<view class="ilblock" style="line-height: 40rpx;">
-			<view class="color2 font26">购买郁金香</view>
-			<view class="color3 font24">￥56.00</view>
-		</view>
-		<view class="color4 font28 ilblock flo-right" style="margin-left: 40rpx;">+12.00</view>
-	</view>
-	<view class="list bg1">
-		<view class="ilblock" style="line-height: 40rpx;">
-			<view class="color2 font26">购买郁金香</view>
-			<view class="color3 font24">￥56.00</view>
-		</view>
-		<view class="color4 font28 ilblock flo-right" style="margin-left: 40rpx;">+12.00</view>
-	</view>
-	
-	
+	<block wx:for="{{web_mainData}}" wx:key="id">
+		<view class="list bg1">
+			<view class="ilblock" style="line-height: 40rpx;">
+				<view class="color2 font26">购买{{item.order[0].products[0].snap_product.title}}{{item.order[0].products.length>1?'等':''}}</view>
+				<view class="color3 font24">￥{{item.order[0].price}}</view>
+			</view>
+			<view class="color4 font28 ilblock flo-right" style="margin-left: 40rpx;">{{item.count}}</view>
+		</view>	
+	</block>
 </view>
 

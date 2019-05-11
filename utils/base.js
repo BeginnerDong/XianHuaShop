@@ -18,7 +18,8 @@ class Base {
 	request(params) {
 		var that = this;
 		getApp().globalData.buttonClick = true;
-		var baseRestUrl = 'http://106.12.155.217/xianhua/public/index.php/api/v1/';
+		var baseRestUrl = 'https://www.aixihuaguanjia.com/api/public/index.php/api/v1/';
+		
 		var url = baseRestUrl + params.url;
 		const callback = (res) => {
 			if (res) {
@@ -96,7 +97,8 @@ class Base {
 			};
 		};
 		wx.uploadFile({
-			url: 'http://106.12.155.217/xianhua/public/index.php/api/v1/Base/FtpFile/upload',
+			url: 'https://www.aixihuaguanjia.com/api/public/index.php/api/v1/Base/FtpFile/upload',
+			
 			filePath: filePath,
 			name: name,
 			formData: formData,

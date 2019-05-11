@@ -1,78 +1,56 @@
 <!--logs.wxml-->
-<view class="topnav">
-	<view class="top-item  {{num == 0?'itemstar':''}}" data-id="0" bindtap="{{web_buttonCanClick?'menuClick':''}}">
+<scroll-view  scroll-x="true" class="topnav flexRowBetween">
+	<view class="top-item  {{num == 0?'itemstar':''}}" data-num="0" bindtap="{{web_buttonCanClick?'menuClick':''}}">
 		全部
 	</view>
-	<view class="top-item {{num == 1?'itemstar':''}}" data-id="1" bindtap="{{web_buttonCanClick?'menuClick':''}}">
+	<view class="top-item {{num == 1?'itemstar':''}}" data-num="1" bindtap="{{web_buttonCanClick?'menuClick':''}}">
 		待支付
 	</view>
-	<view class="top-item {{num == 2?'itemstar':''}}" data-id="2" bindtap="{{web_buttonCanClick?'menuClick':''}}">
+	<view class="top-item {{num == 2?'itemstar':''}}" data-num="2" bindtap="{{web_buttonCanClick?'menuClick':''}}">
 		待发货
 	</view>
-	<view class="top-item {{num == 3?'itemstar':''}}" data-id="3" bindtap="{{web_buttonCanClick?'menuClick':''}}">
+	<view class="top-item {{num == 3?'itemstar':''}}" data-num="3" bindtap="{{web_buttonCanClick?'menuClick':''}}">
 		待收货
 	</view>
-	<view class="top-item {{num == 4?'itemstar':''}}" data-id="4" bindtap="{{web_buttonCanClick?'menuClick':''}}">
+	<view class="top-item {{num == 4?'itemstar':''}}" data-num="4" bindtap="{{web_buttonCanClick?'menuClick':''}}">
 		已完成
 	</view>
-	<view class="top-item {{num == 5?'itemstar':''}}" data-id="5" bindtap="{{web_buttonCanClick?'menuClick':''}}">
+	<view class="top-item {{num == 5?'itemstar':''}}" data-num="5" bindtap="{{web_buttonCanClick?'menuClick':''}}">
 		已取消
 	</view>
-</view>
-<view style="{{num == 0?'display:block':'display:none'}}">
-	
-<view class="bigbox bg1">
-		<view class="font24" style="height: 100rpx; line-height: 100rpx;">
-			<view class="color3 ilblock" style="margin-left: 30rpx;">交易时间：2018-08-30</view>
-			<view class="color4 ilblock flo-right" style="margin-right: 30rpx;">等待支付</view>
-		</view>
-		<view>
-				<view class="ilblock box">
-					<image src="../../images/home-img4.png"></image>
-				</view>
-				<view class="ilblock flo-right" style="height: 50%;width: 54%;margin-right:5%;">
-					<view class="color1 font26 name overflow2">永生花永生花永生花永生花永生花永生花永生花</view>
-					<view class="bg2 color3 font20" style="width: 100rpx; height: 40rpx;text-align: center; line-height: 40rpx; margin-top: 16rpx;margin-bottom: 16rpx;">
-						大束
+</scroll-view>
+<view>
+	<block wx:for="{{web_mainData}}" wx:key="id">
+		<view class="bigbox bg1">
+			<view class="font24" style="height: 100rpx; line-height: 100rpx;">
+				<view class="color3 ilblock" style="margin-left: 30rpx;">交易时间：{{item.create_time}}</view>
+				<view class="color4 ilblock flo-right" style="margin-right: 30rpx;" wx:if="{{item.pay_status=='0'}}">待支付</view>
+				<view class="color4 ilblock flo-right" style="margin-right: 30rpx;" wx:if="{{item.order_step=='3'}}">已完成</view>
+				<view class="color4 ilblock flo-right" style="margin-right: 30rpx;" wx:if="{{item.status=='-1'}}">已取消</view>
+				<view class="color4 ilblock flo-right" style="margin-right: 30rpx;" wx:if="{{item.pay_status == '1'&&item.transport_status =='0'}}">待发货</view>
+			</view>
+			<block wx:for="{{item.products}}" wx:for-item="c_item">
+				<view>
+					<view class="ilblock box">
+						<image src="{{c_item.snap_product.mainImg[0].url}}"></image>
 					</view>
-					<view class="color4 font26" style="margin-top: 25rpx;">￥59.00</view>
-				</view>
-		</view>
-		
-		<view class="font24 color3" style="box-sizing: border-box; padding-right: 5%;padding-left: 5%; ">
-			<view class="box-btm ilblock flo-right">取消订单</view>
-			<view class="box-btm ilblock flo-right" style="margin-right: 40rpx;">去支付</view>
-			<view style="clear: both;"></view>
-		</view>
-	</view>
-	
-	
-	<view class="bigbox bg1">
-		<view class="font24" style="height: 100rpx; line-height: 100rpx;">
-			<view class="color3 ilblock" style="margin-left: 30rpx;">交易时间：2018-08-30</view>
-			<view class="color4 ilblock flo-right" style="margin-right: 30rpx;">等待支付</view>
-		</view>
-		<view>
-				<view class="ilblock box">
-					<image src="../../images/home-img4.png"></image>
-				</view>
-				<view class="ilblock flo-right" style="height: 50%;width: 54%;margin-right:5%;">
-					<view class="color1 font26 name overflow2">永生花永生花永生花永生花永生花永生花永生花</view>
-					<view class="bg2 color3 font20" style="width: 100rpx; height: 40rpx;text-align: center; line-height: 40rpx; margin-top: 16rpx;margin-bottom: 16rpx;">
-						大束
+					<view class="ilblock flo-right" style="height: 50%;width: 54%;margin-right:5%;">
+						<view class="color1 font26 name overflow2">{{c_item.snap_product.title}}</view>
+						<view class="bg2 color3 font20" style="width: 100rpx; height: 40rpx;text-align: center; line-height: 40rpx; margin-top: 16rpx;margin-bottom: 16rpx;">
+							大束
+						</view>
+						<view class="color4 font26" style="margin-top: 25rpx;">¥{{c_item.snap_product.price}}</view>
 					</view>
-					<view class="color4 font26" style="margin-top: 25rpx;">￥59.00</view>
 				</view>
+			</block>
+			<view class="font24 color3" style="box-sizing: border-box; padding-right: 5%;padding-left: 5%; ">
+				<view class="box-btm ilblock flo-right" wx:if="{{item.pay_status=='0'}}" bindatap="deleteOrder" data-id="{{item.id}}">取消订单</view>
+				<view class="box-btm ilblock flo-right" style="margin-right: 40rpx;" wx:if="{{item.pay_status=='0'}}" bindtap="countTotalPrice" data-index="{{index}}">去支付</view>
+				<view class="box-btm ilblock flo-right"  wx:if="{{item.transport_status=='1'}}" bindtap="orderUpdate" data-index="{{index}}">确认收货</view>
+				<view style="clear: both;"></view>
+			</view>
 		</view>
-		
-		<view class="font24 color3" style="box-sizing: border-box; padding-right: 5%;padding-left: 5%; ">
-			<view class="box-btm ilblock flo-right">取消订单</view>
-			<view class="box-btm ilblock flo-right" style="margin-right: 40rpx;">去支付</view>
-			<view style="clear: both;"></view>
-		</view>
-	</view>
-	
-	
-	
-</view>
+	</block>
 
+
+</view>

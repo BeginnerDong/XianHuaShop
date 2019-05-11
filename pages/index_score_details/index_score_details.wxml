@@ -6,7 +6,7 @@
 	{{web_mainData.title}}
 </view>
 <view class="top-text color4 font30">
-	￥{{web_mainData.price}}
+	积分:{{web_choosed_skuData.score}}   ¥{{web_choosed_skuData.price}}
 </view>
 <view class="top-text color2 font24" style="padding-right: 30rpx; margin-bottom: 30rpx;">
 	邮费说明：{{web_mainData.description}}
@@ -24,8 +24,8 @@
 
 <view style="width: 100%; height: 100rpx;"></view>
 <view class="buy">
-	<view class="ilblock" style="width: 44%;">
-		<view class="ilblock" style="width: 45%; text-align: center; margin-bottom: 8rpx;" bindtap="intoPathRedirect"
+	<view class="ilblock" style="width: 30%;">
+		<view class="ilblock" style="width: 100%; text-align: center; margin-bottom: 8rpx;" bindtap="intoPathRedirect"
 		 data-path="/pages/index/index">
 			<view class="footer-img">
 				<image src="../../images/details-icon2.png"></image>
@@ -34,16 +34,9 @@
 				返回首页
 			</view>
 		</view>
-		<view class="ilblock" style="width: 45%; text-align: center; margin-bottom: 8rpx;" bindtap="selectModel" data-type="addCart">
-			<view class="footer-img">
-				<image src="../../images/home-icon6.png"></image>
-			</view>
-			<view class="font20 color3" >
-				购物车
-			</view>
-		</view>
+		
 	</view>
-	<button class="ilblock" style="width: 52%;"  bindtap="selectModel" data-type="buy">立即购买</button>
+	<button class="ilblock" style="width: 65%;"  bindtap="selectModel" data-type="buy">立即购买</button>
 </view>
 <view class="big-buybox" wx:if="{{web_isShow}}">
 	<view class="big-buybtm bg1">

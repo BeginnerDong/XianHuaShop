@@ -17,9 +17,14 @@ Page({
 	},
 
 
-	onLoad(options) {
+	onLoad() {
 		const self = this;
 		api.commonInit(self);
+	
+	},
+	
+	onShow(){
+		const self = this;
 		self.getMainData()
 	},
 	

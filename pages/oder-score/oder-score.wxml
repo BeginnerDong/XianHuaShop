@@ -1,6 +1,6 @@
 	<view wx:if="{{web_addressData.name}}" class="list bg1" style="border-bottom:solid 1px #ECECEC;clear: both; height: 95rpx; line-height: 40rpx; padding-top: 10rpx;margin-top: 0;" bindtap="intoPath" data-path="/pages/address/address">
 		<view class="color1 font26 ilblock flo-left" >
-			收货地址
+			收获地址
 		</view>
 		<view class="ilblock" style="margin-left: 30rpx; line-height: 40rpx;">
 			<view class="font22 color3">{{web_addressData.name}}<text style="margin-left: 30rpx;">{{web_addressData.phone}}</text></view>
@@ -12,7 +12,7 @@
 	</view>
 	<view class="list bg1" wx:else style="border-bottom:solid 1px #ECECEC;clear: both; height: 95rpx; line-height: 40rpx; padding-top: 10rpx;margin-top: 0;" bindtap="intoPath" data-path="/pages/address/address">
 		<view class="color1 font26 ilblock flo-left" style="line-height: 90rpx;">
-			收货地址
+			收获地址
 		</view>
 		<view class="ilblock" style="margin-left: 30rpx; line-height: 90rpx;">
 		

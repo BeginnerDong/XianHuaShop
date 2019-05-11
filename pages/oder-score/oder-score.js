@@ -141,43 +141,25 @@ Page({
 			const callback = (res) => {
 				if (res && res.solely_code == 100000) {
 					wx.removeStorageSync('payPro');
-					self.data.order_id = res.info.id
-					self.getOrderData();
-					for (var i = 0; i < self.data.mainData[0].sku.length; i++) {
-						api.deleteFootOne(self.data.mainData[0].sku[i].id, 'cartData')
-					};
 				};
-
+				self.data.order_id = res.info.id
+				self.pay(self.data.order_id);
+				for (var i = 0; i < self.data.mainData.length; i++) {
+					console.log('self.data.mainData[i].id', self.data.mainData[i].id)
+					api.deleteFootOne(self.data.mainData[i].id, 'cartData')
+				};
 			};
 			api.addOrder(postData, callback);
 		} else {
-			self.getOrderData()
+			self.pay(self.data.order_id)
 		}
 	},
 
-	getOrderData() {
-		const self = this;
-		console.log(111)
-		const postData = {};
-		postData.tokenFuncName = 'getProjectToken';
-		postData.searchItem = {
-			id: self.data.order_id
-		};
-		const callback = (res) => {
-			console.log('res',res)
-			if (res.solely_code == 100000) {
-				if (res.info.data.length > 0) {
-					self.data.orderData = res.info.data[0];
-					self.pay(self.data.orderData.id)
-				}
-			};
-		}
-			api.orderGet(postData, callback);
-	},
 
 
-	pay() {
+	pay(order_id) {
 		const self = this;
+		console.log(self.data.distributionData)
 		var order_id = self.data.order_id;
 		const postData = {
 			token: wx.getStorageSync('token'),
@@ -186,20 +168,30 @@ Page({
 			},
 			wxPay: {
 				price: self.data.totalPrice
-			}
+			},
 		};
 		postData.payAfter = [];
+		postData.payAfter.push({
+			tableName: 'FlowLog',
+			FuncName: 'add',
+			data: {
+				count: -self.data.score,
+				trade_info: '积分支付',
+				user_no: wx.getStorageSync('info').user_no,
+				type: 3,
+				thirdapp_id: 2
+			}
+		});
 		if (self.data.reward > 0) {
 			postData.payAfter.push({
 				tableName: 'FlowLog',
 				FuncName: 'add',
 				data: {
-					count: self.data.reward,
+					count: self.data.reward ,
 					trade_info: '购物得积分',
 					user_no: wx.getStorageSync('info').user_no,
 					type: 3,
-					thirdapp_id: 2,
-					order_no: self.data.orderData.order_no
+					thirdapp_id: 2
 				}
 			});
 		};
@@ -247,11 +239,13 @@ Page({
 		const self = this;
 		var totalPrice = 0;
 		var reward = 0;
+		var score = 0
 		var productsArray = self.data.mainData;
 		console.log('productsArray', productsArray)
 		for (var i = 0; i < productsArray[0].sku.length; i++) {
 			console.log('productsArray-price', productsArray[i].product)
 			totalPrice += productsArray[0].sku[i].product.price * productsArray[0].sku[i].count;
+			score += productsArray[0].sku[i].product.score * productsArray[0].sku[i].count;
 			reward += (productsArray[0].sku[i].product.price * productsArray[0].sku[i].count) * (productsArray[0].sku[i].product
 				.ratio / 100);
 		};
@@ -259,6 +253,7 @@ Page({
 		console.log('reward', reward)
 		self.data.totalPrice = totalPrice;
 		self.data.reward = reward;
+		self.data.score = score;
 		console.log(self.data.totalPrice)
 		self.setData({
 			web_totalPrice: totalPrice.toFixed(2),

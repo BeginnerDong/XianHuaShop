@@ -35,6 +35,7 @@ Page({
 		postData.searchItem = {
 			 type:1,
 			 thirdapp_id:2,
+			 
 			 category_id:self.data.category_id
 		};
 		postData.order = {
@@ -47,7 +48,8 @@ Page({
 		        key: 'product_no',
 		        condition: '=',
 		        searchItem: {
-		            status: 1
+		            status: 1,
+					score:0
 		        }
 		    },
 		};

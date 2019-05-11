@@ -32,6 +32,7 @@ Page({
 	getMainData() {
 		const self = this;
 		const postData = {};
+		postData.paginate = api.cloneForm(self.data.paginate);
 		postData.searchItem = {
 			 type:2,
 			 thirdapp_id:2,

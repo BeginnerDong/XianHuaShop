@@ -1,136 +1,107 @@
 <!--index.wxml-->
 <view class="page-section">
-		
-		<view class="w700 banner">
-			
-				<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
-				 interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px" style="width:100%;height:360rpx">
-					<block wx:for="{{web_sliderData.mainImg}}" wx:index="{{index}}" wx:key="id">
-						<swiper-item>
-							<image src="{{item.url}}" style="width:100%;height:360rpx"></image>
-						</swiper-item>
-					</block>
-				</swiper>
-			
+
+	<view class="w700 banner">
+		<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+		 interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px"
+		 style="width:100%;height:360rpx">
+			<block wx:for="{{web_sliderData.mainImg}}" wx:index="{{index}}" wx:key="id">
+				<swiper-item>
+					<image src="{{item.url}}" style="width:100%;height:360rpx"></image>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+	<view class="w700">
+	    <view id="marquee" class="flexRowBetween">
+	      <view class="horn"><image src="/images/home-icon3.png"></image></view>
+	      <view class="marquee_right">
+			<view class="marquee_container" style="--marqueeWidth--:{{marqueeW}};--allTs--:{{allT}};">
+				<view class="marquee_text" style="font-size:{{size}}px;height:72rpx;line-height: 72rpx;">{{web_sliderData.description}}</view>
+			</view>
+	      </view>
+	  </view>
+	</view>
+	<view class="w700" style="margin-bottom: 20rpx;">
+		<view class="bag ilblock color1" style="width: 49%;">
+			<view class="bagtext font32" style="background: url(../../images/home-icon4.png) no-repeat; background-size: 5%;">鲜花包</view>
+			<view class="bag-img-box ilblock radius" bindtap="intoPath" data-path="/pages/flower_bag_buy/flower_bag_buy?id={{web_cardOneData.id}}">
+				<image src="{{web_cardOneData.mainImg[0].url}}"></image>
+			</view>
+			<view class="color3 font22" bindtap="intoPath" data-path="/pages/flower_bag/flower_bag?category_id={{web_cardOneData.category_id}}"
+			 style="text-align: center;line-height: 40rpx;background: url(../../images/home-icon5.png) no-repeat 240rpx 170rpx;background-size: 3.2%; ">查看更多</view>
 		</view>
-		<view class="w700">
-				<view class="suona-img ilblock" style="background: url(../../images/home-icon3.png) no-repeat 0rpx 5rpx;background-size: 86%;">
-				</view>
-				<view class="suona_text ilblock">
-					通知通知通知通知通知通知
-				</view>
+		<view class="bag ilblock color1" style="width: 49%;">
+			<view class="bagtext font32" style="background: url(../../images/home-icon4.png) no-repeat; background-size: 5%;">定制花管家</view>
+			<view class="bag-img-box ilblock radius" bindtap="intoPath" data-path="/pages/flower_bag_buy/flower_bag_buy?id={{web_cardTwoData.id}}">
+				<image src="{{web_cardTwoData.mainImg[0].url}}"></image>
+			</view>
+			<view class="color3 font22" bindtap="intoPath" data-path="/pages/flower_bag/flower_bag?category_id={{web_cardTwoData.category_id}}"
+			 style="text-align: center;line-height: 40rpx;background: url(../../images/home-icon5.png) no-repeat 240rpx 170rpx;background-size: 3.2%;">查看更多</view>
 		</view>
-		<view class="w700" style="margin-bottom: 20rpx;">
-			<view class="bag ilblock color1" style="width: 49%;">
-				<view class="bagtext font32" style="background: url(../../images/home-icon4.png) no-repeat; background-size: 5%;">鲜花包</view>
-				<view class="bag-img-box ilblock radius"  bindtap="intoPath" data-path="/pages/flower_bag_buy/flower_bag_buy?id={{web_cardOneData.id}}">
-					<image src="{{web_cardOneData.mainImg[0].url}}"></image>
-				</view>
-				<view class="color3 font22" bindtap="intoPath" data-path="/pages/flower_bag/flower_bag?category_id={{web_cardOneData.category_id}}" style="text-align: center;line-height: 40rpx;background: url(../../images/home-icon5.png) no-repeat 240rpx 170rpx;background-size: 3.2%; " >查看更多</view>
-			</view>
-			<view class="bag ilblock color1" style="width: 49%;">
-				<view class="bagtext font32" style="background: url(../../images/home-icon4.png) no-repeat; background-size: 5%;">定制花管家</view>
-				<view class="bag-img-box ilblock radius"  bindtap="intoPath" data-path="/pages/flower_bag_buy/flower_bag_buy?id={{web_cardTwoData.id}}">
-					<image src="{{web_cardTwoData.mainImg[0].url}}"></image>
-				</view>
-				<view class="color3 font22"   bindtap="intoPath" data-path="/pages/flower_bag/flower_bag?category_id={{web_cardTwoData.category_id}}" style="text-align: center;line-height: 40rpx;background: url(../../images/home-icon5.png) no-repeat 240rpx 170rpx;background-size: 3.2%;" >查看更多</view>
-			</view>
+	</view>
+	<view class="w700">
+		<view class="bag">
+			<view class="bagtext ilblock" style="background: url(../../images/home-icon4.png) no-repeat; background-size: 13.4%;">鲜花预订</view>
+			<view class="more ilblock color3" bindtap="intoPath" data-path="/pages/subscribe_a/subscribe_a" style="background: url(../../images/home-icon5.png) no-repeat 110rpx 30rpx;background-size: 9%; ">查看更多</view>
 		</view>
-		<view class="w700">
-			<view class="bag">
-				<view class="bagtext ilblock" style="background: url(../../images/home-icon4.png) no-repeat; background-size: 13.4%;">鲜花预订</view>
-				<view class="more ilblock color3" bindtap="intoPath" data-path="/pages/subscribe_a/subscribe_a" style="background: url(../../images/home-icon5.png) no-repeat 110rpx 30rpx;background-size: 9%; ">查看更多</view>
+
+		<scroll-view class="concerted" scroll-x style="flex-wrap: wrap;">
+			<block wx:for="{{web_labelData}}" wx:key="id">
+				<view class="concerted-box hiden ilblock radius" bindtap="intoPath" data-path="/pages/subscribe_b/subscribe_b?category_id={{item.id}}"
+				 style="background: url({{item.mainImg[0].url}}) no-repeat;background-size:100% ;">
+					<view class="concerted-text">{{item.title}}</view>
+				</view>
+			</block>
+		</scroll-view>
+	</view>
+	<view style="width: 100%;">
+		<block wx:for="{{web_flowerData}}" wx:key="id">
+			<view class="flower-type ilblock" bindtap="intoPath" data-path="/pages/index_store_details/index_store_details?id={{item.id}}">
+				<view class="type-img border-line radius hiden" style="background: url({{item.mainImg[0].url}})no-repeat; background-size:100% ;">
+				</view>
+				<view class="type-text">{{item.title}}</view>
+				<view class="type-money">
+					<view class="type-money-text ilblock">￥{{item.price}}</view>
+					<view class="type-money-car ilblock border-line" style="background: url(../../images/home-icon6.png) no-repeat;background-size: 100%;"></view>
+				</view>
 			</view>
-			
-			<scroll-view  class="concerted" scroll-x style="flex-wrap: wrap;">
-				<block wx:for="{{web_labelData}}" wx:key="id">
-					<view class="concerted-box hiden ilblock radius" bindtap="intoPath" 
-					data-path="/pages/subscribe_b/subscribe_b?category_id={{item.id}}" style="background: url({{item.mainImg[0].url}}) no-repeat;background-size:100% ;">
-						<view class="concerted-text">{{item.title}}</view>
-					</view>					
-				</block>
-			</scroll-view>
-		</view>	
-			<view  style="width: 100%;">
-				<view class="flower-type ilblock" bindtap="intoPath" data-path="/pages/index_store_details/index_store_details">
-					<view class="type-img border-line radius hiden" style="background: url(../../images/home-img4.png)no-repeat; background-size:100% ;">
-					</view>
-					<view class="type-text">永生花永生花永生花</view>
-					<view class="type-money">
-						<view class="type-money-text ilblock">￥ 56.55</view>
-						<view class="type-money-car ilblock border-line" style="background: url(../../images/home-icon6.png) no-repeat;background-size: 100%;"></view>
-					</view>
-				</view>
-				
-				<view class="flower-type border-line ilblock" bindtap="intoPath" data-path="/pages/index_store_details/index_store_details">
-					<view class="type-img border-line radius hiden" style="background: url(../../images/home-img4.png)no-repeat; background-size:100% ;">
-					</view>
-					<view class="type-text">永生花永生花永生花</view>
-					<view class="type-money">
-						<view class="type-money-text ilblock">￥ 56.55</view>
-						<view class="type-money-car ilblock border-line" style="background: url(../../images/home-icon6.png) no-repeat;background-size: 100%;"></view>
-					</view>
-				</view>
-				
-				<view class="flower-type border-line ilblock" bindtap="intoPath" data-path="/pages/index_store_details/index_store_details">
-					<view class="type-img border-line radius hiden" style="background: url(../../images/home-img4.png)no-repeat; background-size:100% ;">
-					</view>
-					<view class="type-text">永生花永生花永生花</view>
-					<view class="type-money">
-						<view class="type-money-text ilblock">￥ 56.55</view>
-						<view class="type-money-car ilblock border-line" style="background: url(../../images/home-icon6.png) no-repeat;background-size: 100%;"></view>
-					</view>
-				</view>
-				
-				<view class="flower-type border-line ilblock" bindtap="intoPath" data-path="/pages/index_store_details/index_store_details">
-					<view class="type-img border-line radius hiden" style="background: url(../../images/home-img4.png)no-repeat; background-size:100% ;">
-					</view>
-					<view class="type-text">永生花永生花永生花</view>
-					<view class="type-money">
-						<view class="type-money-text ilblock">￥ 56.55</view>
-						<view class="type-money-car ilblock border-line" style="background: url(../../images/navbar2.png) no-repeat;background-size: 100%;"></view>
-					</view>
-				</view>
-				
-			</view>
-		<view class="w700" style="margin-bottom: 150rpx;">
-			<view class="bag">
-				<view class="bagtext ilblock" style="background: url(../../images/home-icon4.png) no-repeat; background-size: 14%;">积分商城</view>
-				<view class="more ilblock color3" bindtap="intoPath" data-path="/pages/integral_store/integral_store" style="background: url(../../images/home-icon5.png) no-repeat 110rpx 30rpx;background-size: 9%; ">查看更多</view>
-			</view>
-			<view class="mall" bindtap="intoPath" data-path="/pages/index_store_details/index_store_details">
-				<view class="mall-img hiden radius" style="background:url(../../images/home-img5.png) no-repeat ; background-size: 100%;">
-				</view>
-				<view class="mall-name ">玫瑰玫瑰玫瑰玫瑰</view>
-				<view class="mall-score">积分：52.00</view>
-			</view>
-			
-			<view class="mall" bindtap="intoPath" data-path="/pages/index_store_details/index_store_details">
-				<view class="mall-img hiden radius" style="background:url(../../images/home-img4.png) no-repeat ; background-size: 100%;">
-				</view>
-				<view class="mall-name ">玫瑰玫瑰玫瑰玫瑰</view>
-				<view class="mall-score">积分：52.00</view>
-			</view>
+		</block>
+	</view>
+	<view class="w700" style="margin-bottom: 150rpx;">
+		<view class="bag">
+			<view class="bagtext ilblock" style="background: url(../../images/home-icon4.png) no-repeat; background-size: 14%;">积分商城</view>
+			<view class="more ilblock color3" bindtap="intoPath" data-path="/pages/integral_store/integral_store" style="background: url(../../images/home-icon5.png) no-repeat 110rpx 30rpx;background-size: 9%; ">查看更多</view>
 		</view>
-		
-		<view class="navbar">
-		    <view class="navbar_item" >
-		        <view class="nav_img">
-					<image src="../../images/navbar1-a.png"></image>
+		<block wx:for="{{web_scoreData}}" wx:key="id">
+			<view class="mall" bindtap="intoPath" data-path="/pages/index_score_details/index_score_details?id={{item.id}}">
+				<view class="mall-img hiden radius">
+					<image src="{{item.mainImg[0].url}}" style="width:100%;height:100%"></image>
 				</view>
-		        <view class="text this-text">首页</view>
-		    </view>
-		    <view class="navbar_item"   bindtap="intoPathRedirect" data-path="/pages/logs/logs">
-		        <view class="nav_img">
-					<image src="../../images/home-icon6.png"></image>
-				</view>
-		        <view class="text">购物车</view>
-		    </view>
-		    <view class="navbar_item"   bindtap="intoPathRedirect" data-path="/pages/user/user">
-		        <view class="nav_img">
-					<image src="../../images/navbar3.png" style="width: 44rpx;"></image>
-				</view>
-		        <view class="text">我的</view>
-		    </view>
+				<view class="mall-name ">{{item.title}}</view>
+				<view class="mall-score">积分：{{item.score}}</view>
+			</view>
+		</block>
+	</view>
+
+	<view class="navbar">
+		<view class="navbar_item">
+			<view class="nav_img">
+				<image src="../../images/navbar1-a.png"></image>
+			</view>
+			<view class="text this-text">首页</view>
 		</view>
+		<view class="navbar_item" bindtap="intoPathRedirect" data-path="/pages/logs/logs">
+			<view class="nav_img">
+				<image src="../../images/home-icon6.png"></image>
+			</view>
+			<view class="text">购物车</view>
+		</view>
+		<view class="navbar_item" bindtap="intoPathRedirect" data-path="/pages/user/user">
+			<view class="nav_img">
+				<image src="../../images/navbar3.png" style="width: 44rpx;"></image>
+			</view>
+			<view class="text">我的</view>
+		</view>
+	</view>
 </view>
