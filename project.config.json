@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 37,
+			"current": 41,
 			"list": [
 				{
 					"id": -1,
@@ -264,7 +264,31 @@
 				{
 					"id": -1,
 					"name": "我的订单",
-					"pathName": "pages/allOder/allOder"
+					"pathName": "pages/allOder/allOder",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/index_store_details/index_store_details",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "11",
+					"pathName": "pages/index_score_details/index_score_details",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "111",
+					"pathName": "pages/index_store_details/index_store_details",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "baocun",
+					"pathName": "pages/address_Add/address_Add"
 				}
 			]
 		}

@@ -28,6 +28,6 @@
 		<switch bindchange="switch2Change" checked="{{web_isdefault==1?true:''}}"/>
 	</view>
 </view>
-<button class="bg3 radiu40 font24 color5" style="line-height: 60rpx;width:60%;margin: 0 auto;margin-top: 200rpx;" type="button" bindtap="{{web_buttonCanClick?'submit':''}}">保存</button>
+<button class="bg3 radiu40 font28 color5" style="line-height: 60rpx;width:60%;margin: 0 auto;margin-top: 200rpx;" type="button" bindtap="{{web_buttonCanClick?'submit':''}}">保存</button>
 
 

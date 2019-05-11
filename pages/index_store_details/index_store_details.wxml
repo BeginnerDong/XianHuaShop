@@ -30,7 +30,7 @@
 			<view class="footer-img">
 				<image src="../../images/details-icon2.png"></image>
 			</view>
-			<view class="font20 color3">
+			<view class="font24 color3">
 				返回首页
 			</view>
 		</view>
@@ -38,7 +38,7 @@
 			<view class="footer-img">
 				<image src="../../images/home-icon6.png"></image>
 			</view>
-			<view class="font20 color3" >
+			<view class="font24 color3" >
 				购物车
 			</view>
 		</view>

@@ -21,7 +21,7 @@
 </view>
 </block>
 
-<button class="bg3 radiu40 font24 color5" style="line-height: 60rpx;" type="button" bindtap="intoPath" data-path="/pages/address_Add/address_Add">添加地址</button>
+<button class="bg3 radiu40 font26 color5" style="line-height: 60rpx;" type="button" bindtap="intoPath" data-path="/pages/address_Add/address_Add">添加地址</button>
 
 
 

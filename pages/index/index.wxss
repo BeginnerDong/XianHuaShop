@@ -89,11 +89,12 @@
 	margin-bottom: 5rpx;
 }
 .type-text{
-	font-size: 26rpx;
+	font-size: 28rpx;
+	font-weight: 900;
 	line-height: 30rpx;
 	}
 	.type-money-text{
-		font-size: 24rpx;
+		font-size: 30rpx;
 		color: #FF0000;
 	}
 .type-money-car{
@@ -111,11 +112,12 @@
 		height: 400rpx;
 	}
 	.mall-name{
-		font-size: 26rpx;
+		font-size: 28rpx;
+		font-weight: 900;
 	margin-top: 10rpx;
 	}
 	.mall-score{
-		font-size: 24rpx;
+		font-size: 30rpx;
 		color: #FF0000;
 	margin-top: 10rpx;
 	}

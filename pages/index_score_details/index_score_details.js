@@ -361,7 +361,10 @@ Page({
 		const self = this;
 		api.pathTo(api.getDataSet(e, 'path'), 'nav');
 	},
-
+	intoPathRedirect(e) {
+		const self = this;
+		api.pathTo(api.getDataSet(e, 'path'), 'redi');
+	},
 	isShow() {
 		const self = this;
 		self.data.isShow = !self.data.isShow;

@@ -68,6 +68,6 @@
 	border-radius:40rpx ;
 	background: #FF364E;
 	color: #fff;
-	font-size: 24rpx;
+	font-size: 28rpx;
 	margin-top: 10rpx;
 }
