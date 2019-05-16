@@ -16,7 +16,7 @@
 				<view class="ilblock color4 font26">¥{{item.price}}</view>
 				<view class="ilblock flo-right font12 color2">
 					<view class="ilblock list-item" data-index="{{index}}" data-type="-" bindtap="counter">-</view>
-					<input class="ilblock list-item"  data-index="{{index}}" type="number" bindinput="bindManual" value="{{item.count}}" style="border-left: none; border-right: none;"></input>
+					<view class="ilblock list-item" >{{item.count}}</view>
 					<view class="ilblock list-item" data-index="{{index}}" data-type="+" bindtap="counter">+</view>
 				</view>
 			</view>

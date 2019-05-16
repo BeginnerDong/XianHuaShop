@@ -18,8 +18,8 @@
 			</view>
 		</view>
 	
-	<view class="color1 font30" style="margin-bottom: 20rpx; margin-top: 20rpx;" data-key="phone" bindblur="changeBind" value="{{web_submitData.phone}}">联系电话</view>
-	<input class="color3 font26" placeholder="选填,便于我们与您联系" />
+	<view class="color1 font30" style="margin-bottom: 20rpx; margin-top: 20rpx;" >联系电话</view>
+	<input class="color3 font26" placeholder="选填,便于我们与您联系" data-key="phone" bindblur="changeBind" value="{{web_submitData.phone}}"/>
 	<button class="bg3 color5 font28" open-type="getUserInfo" bindgetuserinfo="{{web_buttonCanClick?'submit':''}}">提交</button>
 </view>
 

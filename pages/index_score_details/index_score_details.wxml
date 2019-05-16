@@ -40,7 +40,7 @@
 </view>
 <view class="big-buybox" wx:if="{{web_isShow}}">
 	<view class="big-buybtm bg1">
-		<image src="../../images/details-icon1.png" style="width: 36rpx; height: 36rpx;float: right;margin: 30rpx;" bindtap="isShow"></image>
+		<image src="../../images/details-icon1.png" style="width: 60rpx; height: 60rpx;float: right;margin: 30rpx;" bindtap="isShow"></image>
 		<view class="buybtm-img ilblock radiu15 hiden flo-left">
 			<image src="{{web_choosed_skuData.mainImg[0].url}}"></image>
 		</view>

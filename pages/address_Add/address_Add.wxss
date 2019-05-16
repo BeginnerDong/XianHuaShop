@@ -36,3 +36,63 @@
 .submit_info{
 	margin:80rpx auto 0 auto;
 }
+page{
+	background: #F2F2F2;
+}
+
+button{
+	width: 60%;
+	height: 60rpx;
+	margin: 300rpx auto 40rpx;
+}
+.list{
+	border-top: solid 1rpx #F2F2F2;
+	padding-left: 30rpx;
+	padding-right: 30rpx;
+	height: 80rpx;
+	line-height: 80rpx;
+}
+
+
+.add_addres{
+	position: absolute;
+	top: 0rpx;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+}
+.add_addres .bg1{
+	position: absolute;
+	bottom: 0rpx;
+	width: 100%;
+	height: 42%;
+}
+.bg1_item1{
+	width: 33.3%;
+	text-align: center;
+	font-size: 28rpx;
+	color: #f87653;
+	border-bottom: solid 1rpx #FAFAFA;
+	height: 70rpx;
+	line-height: 70rpx;
+}
+.bg1_item{
+	width: 33.3%;
+	text-align: center;
+	font-size: 24rpx;
+	color: #A3A3A3;
+	border-bottom: solid 1rpx #FAFAFA;
+	height: 60rpx;
+	line-height: 60rpx;
+}
+.bg1_item3{
+	width: 50%;
+	text-align: center;
+	font-size: 28rpx;
+	color: #f87653;
+	border-top: solid 1rpx #FAFAFA;
+	height: 70rpx;
+	line-height: 70rpx;
+}
+
+

@@ -38,16 +38,16 @@
 			<view class="footer-img">
 				<image src="../../images/home-icon6.png"></image>
 			</view>
-			<view class="font20 color3" >
+			<view class="font20 color3">
 				购物车
 			</view>
 		</view>
 	</view>
-	<button class="ilblock" style="width: 52%;"  bindtap="selectModel" data-type="buy">立即购买</button>
+	<button class="ilblock" style="width: 52%;" bindtap="selectModel" data-type="buy">立即购买</button>
 </view>
 <view class="big-buybox" wx:if="{{web_isShow}}">
 	<view class="big-buybtm bg1">
-		<image src="../../images/details-icon1.png" style="width: 36rpx; height: 36rpx;float: right;margin: 30rpx;" bindtap="isShow"></image>
+		<image src="../../images/details-icon1.png" style="width: 60rpx; height: 60rpx;float: right;margin: 30rpx;" bindtap="isShow"></image>
 		<view class="buybtm-img ilblock radiu15 hiden flo-left">
 			<image src="{{web_choosed_skuData.mainImg[0].url}}"></image>
 		</view>
@@ -60,21 +60,21 @@
 			<view style="margin-top: 20rpx;">
 				<block wx:for="{{item.child}}" wx:for-item="c_item" wx:key="c_item">
 					<view class="ilblock buybtm-norms  font26 color3 {{func.inArray(c_item.id,web_merge_can_choose_sku_item)==-1?'color:gray':(func.inArray(c_item.id,web_choosed_sku_item)!=-1?'norms-star':'color:black')}}"
-					 bindtap="{{func.inArray(c_item.id,web_merge_can_choose_sku_item)!=-1?'chooseSku':''}}" data-id="{{c_item.id}}" >
-					 {{c_item.title}}</view>			
+					 bindtap="{{func.inArray(c_item.id,web_merge_can_choose_sku_item)!=-1?'chooseSku':''}}" data-id="{{c_item.id}}">
+						{{c_item.title}}</view>
 				</block>
 			</view>
 		</block>
-			<view class="list">
-				<view class="color1 font26 ilblock">
-					购买数量：
-				</view>
-				<view class="color1 font12 ilblock flo-right">
-					<view class="ilblock list-item" bindtap="counter" data-type="-">-</view>
-					<view class="ilblock list-item">{{web_count}}</view>
-					<view class="ilblock list-item" bindtap="counter" data-type="+">+</view>
-				</view>
-				<button style="margin-top: 200rpx;" bindtap="{{web_buttonType=='buy'?'goBuy':'addCart'}}">确定</button>
+		<view class="list">
+			<view class="color1 font26 ilblock">
+				购买数量：
 			</view>
+			<view class="color1 font12 ilblock flo-right">
+				<view class="ilblock list-item" bindtap="counter" data-type="-">-</view>
+				<view class="ilblock list-item">{{web_count}}</view>
+				<view class="ilblock list-item" bindtap="counter" data-type="+">+</view>
+			</view>
+			<button style="margin-top: 200rpx;" bindtap="{{web_buttonType=='buy'?'goBuy':'addCart'}}">确定</button>
+		</view>
 	</view>
 </view>

@@ -6,7 +6,6 @@
 				<view class="color3 font24">￥{{item.order[0].price}}</view>
 			</view>
 			<view class="color4 font28 ilblock flo-right" style="margin-left: 40rpx;">{{item.count}}</view>
-		</view>	
+		</view>
 	</block>
 </view>
-

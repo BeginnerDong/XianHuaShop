@@ -40,8 +40,8 @@
 	margin-top: 15rpx;
 }
 .footer-img image{
-	width: 26rpx;
-	height:20rpx;
+	width: 35rpx;
+	height:35rpx;
 }
 
 .big-buybox{

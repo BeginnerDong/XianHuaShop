@@ -43,6 +43,7 @@ Page({
 			if (res.solely_code == 100000) {
 
 				self.data.submitData.mainImg.push({
+					type:'image',
 					url: res.info.url
 				})
 				self.setData({
@@ -114,11 +115,12 @@ Page({
 	submit() {
 		const self = this;
 		api.buttonCanClick(self);
+		console.log('self.data.submitData', self.data.submitData);
 		var phone = self.data.submitData.phone;
 		var newObject = api.cloneForm(self.data.submitData);
 		delete newObject.phone;
 		const pass = api.checkComplete(newObject);
-		console.log('pass', pass);
+		console.log('self.data.submitData', self.data.submitData);
 		if (pass) {
 			
 

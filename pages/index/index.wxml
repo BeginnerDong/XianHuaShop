@@ -46,7 +46,7 @@
 			<view class="more ilblock color3" bindtap="intoPath" data-path="/pages/subscribe_a/subscribe_a" style="background: url(../../images/home-icon5.png) no-repeat 110rpx 30rpx;background-size: 9%; ">查看更多</view>
 		</view>
 
-		<scroll-view class="concerted" scroll-x style="flex-wrap: wrap;">
+		<scroll-view class="concerted" scroll-x style="white-space: nowrap;">
 			<block wx:for="{{web_labelData}}" wx:key="id">
 				<view class="concerted-box hiden ilblock radius" bindtap="intoPath" data-path="/pages/subscribe_b/subscribe_b?category_id={{item.id}}"
 				 style="background: url({{item.mainImg[0].url}}) no-repeat;background-size:100% ;">
