@@ -47,15 +47,16 @@
 
 .bag-img-box{
 	/* border:  solid 1rpx red; */
-	height: 160rpx;
-	width: 320rpx;
+	height: 180rpx;
+	width: 90%;
 	float: left;
-	margin-left: 30rpx;
 	overflow: hidden;
+	margin-left: 20rpx;
+	margin-bottom: 30rpx;
 }
 .bag-img-box image{
-	height: 160rpx;
-	width: 320rpx;
+	height: 100%;
+	width: 100%;
 }
 
 /* --------鲜花预订 */
@@ -80,13 +81,17 @@
 .flower-type{
 	width: 44%;
 	box-sizing: border-box;
-	height: 340rpx;
+	height: 350rpx;
 	margin: 30rpx 0rpx 20rpx 30rpx;
 }
 .type-img{
 	width: 100%;
 	height:260rpx ;
-	margin-bottom: 5rpx;
+	margin-bottom: 20rpx;
+}
+.type-img image{
+	width: 100%;
+	height: 100%;
 }
 .type-text{
 	font-size: 28rpx;
@@ -105,7 +110,6 @@
 }
 .mall{
 	width: 100%;
-	margin: 30rpx auto;
 	}
 	.mall-img{
 		width: 100%;

@@ -25,19 +25,19 @@
 	<view class="w700" style="margin-bottom: 20rpx;">
 		<view class="bag ilblock color1" style="width: 49%;">
 			<view class="bagtext font32" style="background: url(../../images/home-icon4.png) no-repeat; background-size: 5%;">鲜花包</view>
-			<view class="bag-img-box ilblock radius" bindtap="intoPath" data-path="/pages/flower_bag_buy/flower_bag_buy?id={{web_cardOneData.id}}">
+			<view class="bag-img-box ilblock radius"bindtap="intoPath" data-path="/pages/flower_bag_buy/flower_bag_buy?id={{web_cardOneData.id}}">
 				<image src="{{web_cardOneData.mainImg[0].url}}"></image>
 			</view>
 			<view class="color3 font22" bindtap="intoPath" data-path="/pages/flower_bag/flower_bag?category_id={{web_cardOneData.category_id}}"
-			 style="text-align: center;line-height: 40rpx;background: url(../../images/home-icon5.png) no-repeat 240rpx 170rpx;background-size: 3.2%; ">查看更多</view>
+			 style="text-align: center;line-height: 40rpx;background: url(../../images/home-icon5.png) no-repeat 240rpx 220rpx;background-size: 3.2%;">查看更多</view>
 		</view>
-		<view class="bag ilblock color1" style="width: 49%;">
+		<view class="bag ilblock color1 flo-right" style="width: 49%;">
 			<view class="bagtext font32" style="background: url(../../images/home-icon4.png) no-repeat; background-size: 5%;">定制花管家</view>
 			<view class="bag-img-box ilblock radius" bindtap="intoPath" data-path="/pages/flower_bag_buy/flower_bag_buy?id={{web_cardTwoData.id}}">
 				<image src="{{web_cardTwoData.mainImg[0].url}}"></image>
 			</view>
 			<view class="color3 font22" bindtap="intoPath" data-path="/pages/flower_bag/flower_bag?category_id={{web_cardTwoData.category_id}}"
-			 style="text-align: center;line-height: 40rpx;background: url(../../images/home-icon5.png) no-repeat 240rpx 170rpx;background-size: 3.2%;">查看更多</view>
+			 style="text-align: center;line-height: 40rpx;background: url(../../images/home-icon5.png) no-repeat 240rpx 220rpx;background-size: 3.2%;">查看更多</view>
 		</view>
 	</view>
 	<view class="w700">
@@ -58,7 +58,8 @@
 	<view style="width: 100%;">
 		<block wx:for="{{web_flowerData}}" wx:key="id">
 			<view class="flower-type ilblock" bindtap="intoPath" data-path="/pages/index_store_details/index_store_details?id={{item.id}}">
-				<view class="type-img border-line radius hiden" style="background: url({{item.mainImg[0].url}})no-repeat; background-size:100% ;">
+				<view class="type-img border-line radius hiden">
+					<image src="{{item.mainImg[0].url}}"></image>
 				</view>
 				<view class="type-text">{{item.title}}</view>
 				<view class="type-money">
