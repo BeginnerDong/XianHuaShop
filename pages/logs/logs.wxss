@@ -46,6 +46,7 @@ page{
 	height: 110rpx;
 	position: fixed;
 	bottom: 110rpx;
+	border-bottom: solid 1rpx #EAEAEA;
 }
 .ran2{
 	height: 100%;
@@ -55,4 +56,8 @@ page{
 	width: 40rpx;
 	height: 40rpx;
 	margin: 40rpx 20rpx;
+}
+
+.navbar{
+	box-shadow: none;
 }

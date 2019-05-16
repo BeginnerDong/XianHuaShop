@@ -35,8 +35,13 @@
 .bagtext{
 	font-size: 30rpx;
 	font-weight: bolder;
-	text-indent: 20rpx;
 	line-height: 80rpx;
+}
+.bagtext image{
+	width: 18rpx;
+	height:20rpx;
+	position:relative;
+	top: -30rpx;
 }
 .more{
 	font-size: 22rpx;
@@ -108,6 +113,11 @@
 	float: right;
 	margin-top: 15rpx;
 }
+.type-money-car image{
+	width: 100%;
+	height: 100%;
+	float: right;
+}
 .mall{
 	width: 100%;
 	}
@@ -171,3 +181,14 @@
 	  white-space: nowrap;
 	  animation: around var(--allTs--)  infinite linear;
 	}
+	
+.rightImg{
+	width:10rpx;
+	height: 18rpx;
+	margin-left: 34rpx;
+}
+.rightImg2{
+	width:10rpx;
+	height: 20rpx;
+	margin-left: 20rpx;
+}

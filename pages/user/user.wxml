@@ -14,7 +14,7 @@
 <view class="list bg1" style="margin-top: 10rpx;" bindtap="intoPath" data-path="/pages/allOder/allOder">
 	<view class="ilblock color1 font30">我的订单</view>
 	<view class="color2 font24 flo-right">查看
-	 <image src="../../images/home-icon5.png" style="width: 12rpx; height: 21rpx;margin-left: 10rpx;"></image>
+	 <image src="../../images/home-icon5.png" style="width: 12rpx; height: 20rpx;margin-left: 10rpx;"></image>
 	 </view>
 </view>
 
