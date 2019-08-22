@@ -8,8 +8,8 @@
 			<image src="{{item.mainImg[0].url}}"></image>
 		</view>
 		<view class="ilblock flo-right" style="height: 74%;width: 54%; margin-top: 5%;margin-right: 5%;">
-			<view class="color1 font26 name overflow2">{{item.title}}</view>
-			<view class="color3 font20" style=" height: 40rpx;line-height: 40rpx; margin-top: 16rpx;margin-bottom: 16rpx;">
+			<view class="color1 name overflow2">{{item.title}}</view>
+			<view class="color3 font24 avoidOverflow" style=" height: 40rpx;line-height: 40rpx; margin-top: 16rpx;margin-bottom: 16rpx;">
 				{{item.description}}
 			</view>
 			<view>
@@ -23,13 +23,13 @@
 		</view>
 	</view>
 </block>
-<view class="footer bg1">
-	<view class="ilblock ran2" bindtap="chooseAll">
-		<image src="{{web_isChooseAll?'/images/shopping-icon1.png':'/images/shopping-icon2.png'}}"></image><text class="font28 color2" style="position: relative; top: -50rpx;">全选</text>
+<view class="footer bg1 flexRowBetween">
+	<view class="ilblock ran2 flexRowBetween" bindtap="chooseAll" style="width:30%;justify-content: flex-start">
+		<image src="{{web_isChooseAll?'/images/shopping-icon1.png':'/images/shopping-icon2.png'}}"></image><text class="font28 color2" >全选</text>
 	</view>
-	<view class="foot-right ilblock" style="position: relative; top: -50rpx;">
+	<view class="foot-right flexRowBetween" style="width:70%;justify-content: flex-end; box-sizing:border-box;padding-right:20rpx">
 		<view class="ilblock color1 font26">合计：<text class="color4">¥{{web_totalPrice}}</text></view>
-		<view class="ilblock bg3 color5 font28 radiu40" style="width: 140rpx;height: 70rpx; margin-left: 30rpx; text-align: center; line-height: 70rpx;"
+		<view class="ilblock bg3 color5 font28 radiu40" style="width: 140rpx;height: 66rpx; margin-left: 30rpx; text-align: center; line-height: 66rpx;"
 		 bindtap="pay">结算</view>
 	</view>
 </view>

@@ -31,6 +31,8 @@ page{
 .name{
 	/* border: solid 1rpx red; */
 	height: 66rpx;
+  line-height: 33rpx;
+  font-size: 28rpx
 }
 .list-item{
 	border: solid 1rpx #F5F5F5;
@@ -47,6 +49,7 @@ page{
 	position: fixed;
 	bottom: 110rpx;
 	border-bottom: solid 1rpx #EAEAEA;
+
 }
 .ran2{
 	height: 100%;
