@@ -39,14 +39,16 @@
 </view>
 <view class="big-buybox" wx:if="{{web_isShow}}">
 	<view class="big-buybtm bg1">
-		<image src="../../images/details-icon1.png" style="width: 60rpx; height: 60rpx;float: right;margin: 30rpx;" bindtap="isShow"></image>
-		<view class="buybtm-img ilblock radiu15 hiden flo-left">
-			<image src="{{web_choosed_skuData.mainImg[0].url}}"></image>
-		</view>
-		<view class="ilblock flo-left">
-			<view class="color1 font30" style="margin-top: 60rpx;">{{web_choosed_skuData.title}}</view>
-			<view class="color4 font30" style="margin-top: 30rpx;">￥{{web_choosed_skuData.price}}/积分:{{web_choosed_skuData.score}}</view>
-		</view>
+		<image src="../../images/details-icon1.png" style="width: 50rpx; height: 50rpx;padding:20rpx;position: absolute;right:0;top:0;" bindtap="isShow"></image>
+    <view class="flexRowBetween" style="align-items: flex-start;padding:70rpx 30rpx 30rpx 30rpx">
+      <view class="buybtm-img ilblock radiu15 hiden">
+        <image src="{{web_choosed_skuData.mainImg[0].url}}"></image>
+      </view>
+      <view class="ilblock" style="width:440rpx;padding-left:20rpx;box-sizing:border-box;position:relative;">
+        <view class="color1 font30 avoidOverflow4">{{web_choosed_skuData.title}}</view>
+        <view class="color4 font30" style="margin-top: 30rpx;">￥{{web_choosed_skuData.price}}/积分:{{web_choosed_skuData.score}}</view>
+      </view>
+    </view>
 		<block wx:for="{{web_labelData}}" wx:key="id">
 			<view class="color1 font28" style="clear: both;margin-left: 30rpx;">{{item.title}}</view>
 			<view style="margin-top: 20rpx;">
@@ -57,7 +59,7 @@
 				</block>
 			</view>
 		</block>
-			<view class="list">
+			<view class="list" style="height:auto;margin-top: 0rpx;">
 				<view class="color1 font26 ilblock">
 					购买数量：
 				</view>
@@ -66,7 +68,7 @@
 					<view class="ilblock list-item">{{web_count}}</view>
 					<view class="ilblock list-item" bindtap="counter" data-type="+">+</view>
 				</view>
-				<button style="margin-top: 200rpx;" bindtap="{{web_buttonType=='buy'?'goBuy':'addCart'}}">确定</button>
+				<button style="margin: 50rpx auto;" bindtap="{{web_buttonType=='buy'?'goBuy':'addCart'}}">确定</button>
 			</view>
 	</view>
 </view>

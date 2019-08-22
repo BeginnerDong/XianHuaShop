@@ -60,7 +60,6 @@
     right: 0;
     bottom:0;
     left: 0;
-    /* padding-top: 260rpx; */
 }
 
 .big-buybtm {
@@ -68,7 +67,6 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    /* height: 950rpx; */
     border-radius: 17rpx 17rpx 0rpx 0rpx;
     
 }

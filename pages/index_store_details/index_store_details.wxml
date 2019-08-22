@@ -54,7 +54,7 @@
         <image src="{{web_choosed_skuData.mainImg[0].url}}"></image>
       </view>
       <view class="ilblock" style="width:440rpx;padding-left:20rpx;box-sizing:border-box;position:relative;">
-			  <view class="color1 font30 avoidOverflow4" style="">{{web_choosed_skuData.title}}</view>
+			  <view class="color1 font30 avoidOverflow4">{{web_choosed_skuData.title}}</view>
 			  <view class="color4 font30" style="margin-top: 30rpx;">￥{{web_choosed_skuData.price}}</view>
 		</view>
 
