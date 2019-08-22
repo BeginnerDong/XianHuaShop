@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 41,
+			"current": 43,
 			"list": [
 				{
 					"id": -1,
@@ -288,7 +288,21 @@
 				{
 					"id": -1,
 					"name": "baocun",
-					"pathName": "pages/address_Add/address_Add"
+					"pathName": "pages/address_Add/address_Add",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "确认订单",
+					"pathName": "pages/oder-true/oder-true",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/oder-true/oder-true",
+					"pathName": "pages/oder-true/oder-true",
+					"scene": null
 				}
 			]
 		}

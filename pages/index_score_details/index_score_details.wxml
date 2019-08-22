@@ -6,7 +6,7 @@
 	{{web_mainData.title}}
 </view>
 <view class="top-text color4 font30">
-	积分:{{web_choosed_skuData.score}}   ¥{{web_choosed_skuData.price}}
+	积分:{{web_choosed_skuData.score}}/¥{{web_choosed_skuData.price}}
 </view>
 <view class="top-text color2 font24" style="padding-right: 30rpx; margin-bottom: 30rpx;">
 	邮费说明：{{web_mainData.description}}
@@ -45,7 +45,7 @@
 		</view>
 		<view class="ilblock flo-left">
 			<view class="color1 font30" style="margin-top: 60rpx;">{{web_choosed_skuData.title}}</view>
-			<view class="color4 font30" style="margin-top: 30rpx;">￥{{web_choosed_skuData.price}}</view>
+			<view class="color4 font30" style="margin-top: 30rpx;">￥{{web_choosed_skuData.price}}/积分:{{web_choosed_skuData.score}}</view>
 		</view>
 		<block wx:for="{{web_labelData}}" wx:key="id">
 			<view class="color1 font28" style="clear: both;margin-left: 30rpx;">{{item.title}}</view>

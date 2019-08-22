@@ -19,7 +19,7 @@ class Base {
 		var that = this;
 		getApp().globalData.buttonClick = true;
 		var baseRestUrl = 'https://www.aixihuaguanjia.com/api/public/index.php/api/v1/';
-		
+
 		var url = baseRestUrl + params.url;
 		const callback = (res) => {
 			if (res) {
@@ -98,7 +98,7 @@ class Base {
 		};
 		wx.uploadFile({
 			url: 'https://www.aixihuaguanjia.com/api/public/index.php/api/v1/Base/FtpFile/upload',
-			
+
 			filePath: filePath,
 			name: name,
 			formData: formData,
@@ -294,6 +294,76 @@ class Base {
 			return false;
 		}
 	};
+
+	CurentDate() {
+		var now = new Date();
+
+		var year = now.getFullYear(); //年
+		var month = now.getMonth() + 1; //月
+		var day = now.getDate(); //日
+
+		var hh = now.getHours(); //时
+		var mm = now.getMinutes(); //分
+		var ss = now.getSeconds(); //秒
+
+		var clock = year + "-";
+
+		if (month < 10)
+			clock += "0";
+
+		clock += month + "-";
+
+		if (day < 10)
+			clock += "0";
+
+		clock += day;
+
+		/*        if(hh < 10)
+		            clock += "0";
+		            
+		        clock += hh + ":";
+		        if (mm < 10) clock += '0'; 
+		        clock += mm + ":"; 
+		         
+		        if (ss < 10) clock += '0'; 
+		        clock += ss; */
+		return (clock);
+	}
+
+	CurentTime() {
+		var now = new Date();
+
+		var year = now.getFullYear(); //年
+		var month = now.getMonth() + 1; //月
+		var day = now.getDate(); //日
+
+		var hh = now.getHours(); //时
+		var mm = now.getMinutes(); //分
+		var ss = now.getSeconds(); //秒
+
+/* 		var clock = year + "-";
+
+		if (month < 10)
+			clock += "0";
+
+		clock += month + "-";
+
+		if (day < 10)
+			clock += "0";
+
+		clock += day + " "; */
+		var clock ='';
+		if (hh < 10)
+			clock += "0";
+
+		clock += hh + ":";
+		if (mm < 10) clock += '0';
+		clock += mm;
+
+/* 		if (ss < 10) clock += '0';
+		clock += ss; */
+		return (clock);
+	}
 
 	getToday() {
 		var date = new Date();
@@ -932,9 +1002,11 @@ class Base {
 
 		return new Date(m_year + '/' + '/' + m_month + '/' + m_date).getTime() / 1000 //周一的年月日
 	}
-	
-	add0(m){return m<10?'0'+m:m }
-	
+
+	add0(m) {
+		return m < 10 ? '0' + m : m
+	}
+
 	timestampToTime(timestamp) {
 		var timestamp = parseInt(timestamp)
 		var time = new Date(timestamp);
@@ -944,7 +1016,7 @@ class Base {
 		var h = time.getHours();
 		var mm = time.getMinutes();
 		var s = time.getSeconds();
-		return y + '-' + this.add0(m) + '-' + this.add0(d) ;
+		return y + '-' + this.add0(m) + '-' + this.add0(d);
 
 	}
 

@@ -15,11 +15,14 @@ Page({
 		mainData: [],
 		addressData: [],
 		idData: [],
-
+		date:'',
+		timeArray:['上午','下午'],
 		searchItem: {
 			isdefault: 1
 		},
-
+		submitData:{
+			notice:''
+		},
 		order_id: '',
 		isFirstLoadAllStandard: ['getMainData']
 
@@ -28,6 +31,11 @@ Page({
 	onLoad(options) {
 		const self = this;
 		api.commonInit(self);
+		self.data.date = api.CurentDate();
+		self.setData({
+			web_timeArray:self.data.timeArray,
+			web_date:self.data.date,
+		})
 	},
 
 
@@ -122,19 +130,42 @@ Page({
 			api.showToast('请选择收货地址', 'none');
 			return;
 		};
+
 		const callback = (user, res) => {
 			self.addOrder();
 		};
 		api.getAuthSetting(callback);
 	},
-
+	
+	changeBind(e) {
+		const self = this;
+		if (api.getDataSet(e, 'value')) {
+			self.data.submitData[api.getDataSet(e, 'key')] = api.getDataSet(e, 'value');
+		} else {
+			api.fillChange(e, self, 'submitData');
+		};
+		self.setData({
+			web_submitData: self.data.submitData,
+		});
+		console.log(self.data.submitData)
+	},
 
 	addOrder() {
 		const self = this;
+		if(!self.data.time){
+			api.buttonCanClick(self, true);
+			api.showToast('请选择送达时间', 'none');
+			return;
+		};
 		if (!self.data.order_id) {
 			const postData = {
 				tokenFuncName: 'getProjectToken',
 				orderList: self.data.mainData,
+				snap_address: self.data.addressData,
+				data:{
+					passage1:self.data.date+' '+self.data.time,
+					express_info:self.data.submitData.notice
+				}
 			};
 			console.log('addOrder', self.data.addressData)
 
@@ -143,9 +174,6 @@ Page({
 					wx.removeStorageSync('payPro');
 					self.data.order_id = res.info.id
 					self.getOrderData();
-					for (var i = 0; i < self.data.mainData[0].sku.length; i++) {
-						api.deleteFootOne(self.data.mainData[0].sku[i].id, 'cartData')
-					};
 				};
 
 			};
@@ -153,6 +181,24 @@ Page({
 		} else {
 			self.getOrderData()
 		}
+	},
+
+	bindDateChange(e) {
+		const self = this;
+		console.log('picker发送选择改变，携带值为', e.detail.value)
+		self.data.date = e.detail.value;
+		self.setData({
+			web_date:self.data.date,
+		})
+	},
+	bindTimeChange(e) {
+		const self = this;
+		console.log('picker发送选择改变，携带值为', e.detail.value)
+		self.data.time = self.data.timeArray[e.detail.value];
+		self.setData({
+			web_index:e.detail.value,
+			web_time:self.data.time
+		})
 	},
 
 	getOrderData() {
@@ -164,7 +210,7 @@ Page({
 			id: self.data.order_id
 		};
 		const callback = (res) => {
-			console.log('res',res)
+			console.log('res', res)
 			if (res.solely_code == 100000) {
 				if (res.info.data.length > 0) {
 					self.data.orderData = res.info.data[0];
@@ -172,7 +218,7 @@ Page({
 				}
 			};
 		}
-			api.orderGet(postData, callback);
+		api.orderGet(postData, callback);
 	},
 
 

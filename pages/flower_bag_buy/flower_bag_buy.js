@@ -45,6 +45,21 @@ Page({
 		};
 		api.productGet(postData, callback);
 	},
+	
+	
+	goBuy() {
+		const self = this;
+		api.buttonCanClick(self);
+		var orderList = [{
+			product: [{
+				id: self.data.mainData.id,
+				count: 1,
+			}, ],
+			type: 2,
+		}];
+		wx.setStorageSync('payPro',orderList);
+		api.pathTo('/pages/orderBag/orderBag','nav')
+	},
 
 	addOrder(e) {
 		const self = this;
@@ -122,10 +137,9 @@ Page({
 		const self = this;
 		api.buttonCanClick(self);
 		const callback = (user, res) => {
-			self.addOrder();
+			self.goBuy();
 		};
 		api.getAuthSetting(callback);
-
 	},
 
 

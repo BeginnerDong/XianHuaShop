@@ -1,6 +1,6 @@
 	<view wx:if="{{web_addressData.name}}" class="list bg1" style="border-bottom:solid 1px #ECECEC;clear: both; height: 95rpx; line-height: 40rpx; padding-top: 10rpx;margin-top: 0;" bindtap="intoPath" data-path="/pages/address/address">
 		<view class="color1 font26 ilblock flo-left" >
-			收获地址
+			收货地址
 		</view>
 		<view class="ilblock" style="margin-left: 30rpx; line-height: 40rpx;">
 			<view class="font22 color3">{{web_addressData.name}}<text style="margin-left: 30rpx;">{{web_addressData.phone}}</text></view>
@@ -12,7 +12,7 @@
 	</view>
 	<view class="list bg1" wx:else style="border-bottom:solid 1px #ECECEC;clear: both; height: 95rpx; line-height: 40rpx; padding-top: 10rpx;margin-top: 0;" bindtap="intoPath" data-path="/pages/address/address">
 		<view class="color1 font26 ilblock flo-left" style="line-height: 90rpx;">
-			收获地址
+			收货地址
 		</view>
 		<view class="ilblock" style="margin-left: 30rpx; line-height: 90rpx;">
 		
@@ -22,20 +22,20 @@
 			<image src="../../images/home-icon5.png" style="width: 14rpx; height: 24rpx;"></image>
 		</view>
 	</view>
-	<block wx:for="{{web_mainData[0].sku}}" wx:key="id">
+	<block wx:for="{{web_mainData[0].product}}" wx:key="id">
 		<view class="big-buybtm bg1" style="height:310rpx">
 			<view class="buybtm-img ilblock radiu15 hiden flo-left">
 				<image src="{{item.product.mainImg[0].url}}"></image>
 			</view>
 			<view class="ilblock flo-left">
 				<view class="color1 font26"style="margin-top: 60rpx;">{{item.product.title}}</view>
-				<view class="buybtm-norms norms-star font24 color3">{{item.product.label.title}}</view>
-				<view class="color4 font26"style="margin-top: 30rpx;">¥{{item.product.price}}/积分:{{item.product.score}}</view>
+			
+				<view class="color4 font26"style="margin-top: 30rpx;">¥{{item.product.price}}</view>
 			</view>
 			
 		</view>
 		
-		<view class="list" style="margin-top: 0;background-color: #fff;">
+<!-- 		<view class="list" style="margin-top: 0;background-color: #fff;">
 			<view class="color1 font26 ilblock">
 				购买数量：
 			</view>
@@ -44,11 +44,11 @@
 				<view class="ilblock list-item">{{item.count}}</view>
 				<view class="ilblock list-item" bindtap="counter" data-index="{{index}}" data-type="+">+</view>
 			</view>
-		</view>
+		</view> -->
 	</block>
 	<view class="oder-btm bg1">
-		<view class="oder-btmbox flo-right" style="display: flex;width:100%;">
-			<view class=" color1 font26" style="line-height: 100rpx;margin-left: 25%;">合计：<text class="color4">￥{{web_totalPrice}}/积分:{{web_score}}</text></view>
-			<button class="color5 radiu40  font26" style="width: 190rpx; height: 74rpx; line-height: 80rpx;text-align: center; background: #F20C3E;margin-left: 15rpx;" open-type="getUserInfo" bindgetuserinfo="{{web_buttonCanClick?'submit':''}}">立即购买</button>
+		<view class="oder-btmbox flo-right" >
+			<view class="ilblock color1 font26" style="position: relative; top: -24rpx;">合计：<text class="color4">￥{{web_totalPrice}}</text></view>
+			<button class="color5 radiu40 ilblock font26" style="width: 190rpx; height: 74rpx; line-height: 80rpx;text-align: center; background: #F20C3E;margin-left: 15rpx;" open-type="getUserInfo" bindgetuserinfo="{{web_buttonCanClick?'submit':''}}">立即购买</button>
 		</view>
 	</view>

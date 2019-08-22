@@ -18,7 +18,8 @@
     "pages/myflowerbag/myflowerbag",
     "pages/feedback/feedback",
     "pages/suggestion/suggestion",
-    "pages/allOder/allOder"
+    "pages/allOder/allOder",
+		"pages/orderBag/orderBag"
   ],
   "window": {
     "backgroundTextStyle": "light",

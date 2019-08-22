@@ -26,7 +26,7 @@
 		<view class="bag ilblock color1" style="width: 49%;">
 			<view class="bagtext font32">
 				<image src="../../images/home-icon4.png"></image>
-				鲜花包</view>
+				鲜花包月</view>
 			<view class="bag-img-box ilblock radius"bindtap="intoPath" data-path="/pages/flower_bag_buy/flower_bag_buy?id={{web_cardOneData.id}}">
 				<image src="{{web_cardOneData.mainImg[0].url}}"></image>
 			</view>
@@ -36,7 +36,7 @@
 		<view class="bag ilblock color1 flo-right" style="width: 49%;">
 			<view class="bagtext font32">
 				<image src="../../images/home-icon4.png"></image>
-				制定花管家</view>
+				定制花管家</view>
 			<view class="bag-img-box ilblock radius" bindtap="intoPath" data-path="/pages/flower_bag_buy/flower_bag_buy?id={{web_cardTwoData.id}}">
 				<image src="{{web_cardTwoData.mainImg[0].url}}"></image>
 			</view>
@@ -90,7 +90,7 @@
 					<image src="{{item.mainImg[0].url}}" style="width:100%;height:100%"></image>
 				</view>
 				<view class="mall-name ">{{item.title}}</view>
-				<view class="mall-score">积分：{{item.score}}</view>
+				<view class="mall-score">积分:{{item.score}}/¥{{item.price}}</view>
 			</view>
 		</block>
 	</view>

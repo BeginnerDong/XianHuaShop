@@ -38,7 +38,8 @@ Page({
 		postData.tokenFuncName = 'getProjectToken';
 		postData.searchItem = api.cloneForm(self.data.searchItem);
 		postData.searchItem.thirdapp_id = getApp().globalData.thirdapp_id;
-		postData.searchItem.type = 2
+		postData.searchItem.type = 2;
+		postData.searchItem.pay_status = 1;
 		postData.order = {
 			create_time: 'desc'
 		}
