@@ -23,6 +23,10 @@ Page({
 		const self = this;
 		api.commonInit(self);
 		self.data.id = options.id;
+		console.log(options.name)
+		wx.setNavigationBarTitle({
+			title: options.name,
+		});
 		self.getMainData()
 
 	},

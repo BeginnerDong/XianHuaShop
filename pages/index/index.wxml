@@ -27,7 +27,8 @@
 			<view class="bagtext font32">
 				<image src="../../images/home-icon4.png"></image>
 				鲜花包月</view>
-			<view class="bag-img-box ilblock radius"bindtap="intoPath" data-path="/pages/flower_bag_buy/flower_bag_buy?id={{web_cardOneData.id}}">
+			<view class="bag-img-box ilblock radius"bindtap="intoPath" 
+			data-path="/pages/flower_bag_buy/flower_bag_buy?id={{web_cardOneData.id}}&name=鲜花包月">
 				<image src="{{web_cardOneData.mainImg[0].url}}"></image>
 			</view>
 			<view class="color3 font22" bindtap="intoPath" data-path="/pages/flower_bag/flower_bag?category_id={{web_cardOneData.category_id}}"
@@ -37,7 +38,8 @@
 			<view class="bagtext font32">
 				<image src="../../images/home-icon4.png"></image>
 				定制花管家</view>
-			<view class="bag-img-box ilblock radius" bindtap="intoPath" data-path="/pages/flower_bag_buy/flower_bag_buy?id={{web_cardTwoData.id}}">
+			<view class="bag-img-box ilblock radius" bindtap="intoPath" 
+			data-path="/pages/flower_bag_buy/flower_bag_buy?id={{web_cardTwoData.id}}&name=定制花管家">
 				<image src="{{web_cardTwoData.mainImg[0].url}}"></image>
 			</view>
 			<view class="color3 font22" bindtap="intoPath" data-path="/pages/flower_bag/flower_bag?category_id={{web_cardTwoData.category_id}}"

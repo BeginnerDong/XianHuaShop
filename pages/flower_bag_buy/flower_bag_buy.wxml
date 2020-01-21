@@ -22,7 +22,7 @@
 			</view>
 		</view>
 	</view>
-	<view class="give-type w700 color1">
+	<!-- <view class="give-type w700 color1">
 		赠花种类
 	</view>
 	<view class="w700">
@@ -34,7 +34,7 @@
 				</view>
 			</view>
 		</block>
-	</view>
+	</view> -->
 	
 </view>
 <view class="buy">

@@ -6,7 +6,7 @@
 	{{web_mainData.title}}
 </view>
 <view class="top-text color4 font30">
-	￥{{web_mainData.price}}
+	￥{{web_choosed_skuData.price}}
 </view>
 <view class="top-text color2 font24" style="padding-right: 30rpx; margin-bottom: 30rpx;">
 	邮费说明：{{web_mainData.description}}
